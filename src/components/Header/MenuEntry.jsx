@@ -1,24 +1,33 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Typography } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
-const MenuEntry = (props) => {
-  const { text } = props;
+const MenuEntry = ({ entry }) => {
+  const navigate = useNavigate();
+
   return (
     <Typography
       variant="h6"
       component="div"
       sx={{
         padding: (theme) => `0 ${theme.spacing(2)}`,
-        // border: 1,
-        // borderColor: (theme) => theme.palette.secondary.main,
       }}
     >
-      {text}
+      <span
+        onClick={() => {
+          navigate(entry.url);
+        }}
+        style={{ cursor: "pointer" }}
+      >
+        {entry.label}
+      </span>
     </Typography>
   );
 };
 
-MenuEntry.propTypes = {};
+MenuEntry.propTypes = {
+  entry: PropTypes.object,
+};
 
 export default MenuEntry;

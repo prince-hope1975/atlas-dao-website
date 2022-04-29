@@ -7,11 +7,12 @@ import {
   ListItem,
   ListItemText,
 } from "@mui/material";
-import { Menu as MenuIcon } from "@mui/icons-material";
+import { CloseRounded, Menu as MenuIcon } from "@mui/icons-material";
+import { useNavigate } from "react-router-dom";
 
-const SideMenu = (props) => {
-  const { entries } = props;
+const SideMenu = ({ entries }) => {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
@@ -20,7 +21,7 @@ const SideMenu = (props) => {
   return (
     <>
       <IconButton onClick={toggleDrawer(true)}>
-        <MenuIcon />
+        <MenuIcon sx={{ display: open ? "none" : "inline" }} />
       </IconButton>
       <Drawer
         anchor={"right"}
@@ -34,10 +35,23 @@ const SideMenu = (props) => {
         }}
       >
         <List>
-          {entries.map((label) => {
+          <ListItem sx={{ justifyContent: "flex-end" }}>
+            <IconButton onClick={toggleDrawer(false)}>
+              <CloseRounded />
+            </IconButton>
+          </ListItem>
+          {entries.map((entry) => {
             return (
-              <ListItem button key={label} onClick={toggleDrawer(false)}>
-                <ListItemText primary={label} />
+              <ListItem
+                button
+                key={entry.label}
+                onClick={() => {
+                  toggleDrawer(false);
+                  setOpen(false);
+                  navigate(entry.url);
+                }}
+              >
+                <ListItemText primary={entry.label} />
               </ListItem>
             );
           })}
@@ -47,6 +61,8 @@ const SideMenu = (props) => {
   );
 };
 
-SideMenu.propTypes = {};
+SideMenu.propTypes = {
+  entries: PropTypes.array,
+};
 
 export default SideMenu;

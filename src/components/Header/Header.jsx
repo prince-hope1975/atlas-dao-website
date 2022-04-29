@@ -13,9 +13,7 @@ import { BlurCircular } from "@mui/icons-material";
 import MenuEntry from "./MenuEntry";
 import SideMenu from "./SideMenu";
 
-const Header = (props) => {
-  const { children, window } = props;
-
+const Header = ({ window }) => {
   const trigger = useScrollTrigger({
     target: window ? window() : undefined,
   });
@@ -24,10 +22,12 @@ const Header = (props) => {
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   const menuEntries = [
-    "Home",
-    "Validators",
-    "Atlas DAO",
-    "World End Hunger Foundation",
+    { label: "Home", url: "/" },
+    { label: "Roadmap", url: "/roadmap" },
+    { label: "Atlas DAO", url: "/dao" },
+    { label: "EWH Foundation", url: "/fundation" },
+    { label: "Gallery", url: "/gallery" },
+    // { label: "Validators", url: "/validators" },
   ];
 
   return (
@@ -48,8 +48,8 @@ const Header = (props) => {
             <SideMenu entries={menuEntries} />
           ) : (
             <>
-              {menuEntries.map((label) => {
-                return <MenuEntry text={label} key={label} />;
+              {menuEntries.map((entry) => {
+                return <MenuEntry entry={entry} key={entry.label} />;
               })}
             </>
           )}
@@ -59,6 +59,8 @@ const Header = (props) => {
   );
 };
 
-Header.propTypes = {};
+Header.propTypes = {
+  window: PropTypes.any,
+};
 
 export default Header;

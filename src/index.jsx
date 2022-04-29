@@ -1,7 +1,6 @@
 // import { createTheme, ThemeProvider } from "@mui/material";
 import React from "react";
 import { render } from "react-dom";
-import { HashRouter } from "react-router-dom";
 import App from "./components/App";
 
 import { createTheme, ThemeProvider } from "@mui/material/styles";
@@ -38,9 +37,7 @@ const themeOptions_ligth = createTheme({
 
 render(
   <ThemeProvider theme={themeOptions_ligth}>
-    <HashRouter>
-      <App />
-    </HashRouter>
+    <App />
   </ThemeProvider>,
   document.getElementById("app")
 );

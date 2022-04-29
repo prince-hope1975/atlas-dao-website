@@ -1,17 +1,16 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { Outlet } from "react-router";
 import Header from "../../components/Header/Header";
-import { Container, Grid, Toolbar } from "@mui/material";
+import { Grid, Toolbar } from "@mui/material";
 
 import background from "../../images/back.png";
 
-const BaseLayout = (props) => {
+const BaseLayout = () => {
   return (
     <div style={{ backgroundImage: `url(${background})` }}>
       <Header />
       <Toolbar />
-      <Grid container>
+      <Grid container sx={{ marginTop: (theme) => theme.spacing(6) }}>
         <Outlet />
       </Grid>
     </div>

@@ -1,22 +1,23 @@
 import React from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import BaseLayout from "../layout/BaseLayout/BaseLayout";
-import { Route, Routes } from "react-router-dom";
-import About from "../views/About/About";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
 import "../sass/app.scss";
 import Home from "../views/Home/Home";
+import Roadmap from "../views/Roadmap/Roadmap";
 
-const App = (props) => {
+const App = () => {
   return (
-    <div>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<BaseLayout />}>
           <Route path="" element={<Home />} />
-          <Route path="about" element={<About />} />
+          <Route path="/roadmap" element={<Roadmap />} />
+          <Route path="*" element={<div>hola</div>} />
         </Route>
       </Routes>
-    </div>
+    </HashRouter>
   );
 };
 
