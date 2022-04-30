@@ -3,17 +3,34 @@ import { Outlet } from "react-router";
 import Header from "../../components/Header/Header";
 import { Grid, Toolbar } from "@mui/material";
 
-import background from "../../images/back.png";
+import Footer from "../../components/Footer/Footer";
 
 const BaseLayout = () => {
   return (
-    <div style={{ backgroundImage: `url(${background})` }}>
+    <>
       <Header />
       <Toolbar />
-      <Grid container sx={{ marginTop: (theme) => theme.spacing(6) }}>
-        <Outlet />
-      </Grid>
-    </div>
+      <div
+        style={{
+          height: "100vh",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+        }}
+      >
+        <Grid
+          container
+          sx={{
+            padding: "0 80px",
+            marginTop: (theme) => theme.spacing(6),
+            marginBottom: (theme) => theme.spacing(6),
+          }}
+        >
+          <Outlet />
+        </Grid>
+        <Footer />
+      </div>
+    </>
   );
 };
 

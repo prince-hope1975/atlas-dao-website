@@ -2,9 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Box } from "@mui/material";
 
-import roadmap2 from "../../../images/roadmap_2.svg";
-import roadmap3 from "../../../images/roadmap_3.svg";
-// import roadmap4 from "../../../images/roadmap_4.svg";
+import roadmap2 from "../../../images/roadmap/roadmap_2.svg";
+import roadmap3 from "../../../images/roadmap/roadmap_3.svg";
 import { RocketLaunch } from "@mui/icons-material";
 
 const ColorStepIcon = ({ active, completed, className, icon }) => {

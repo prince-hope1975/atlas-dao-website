@@ -10,8 +10,8 @@ const ListItem = ({ children }) => {
     <Typography
       sx={{
         textTransform: "uppercase",
-        textShadow:
-          "rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px",
+        // textShadow:
+        //   "rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px",
         margin: "16px 0",
         // padding: "0 50px",
         textAlign: "center",

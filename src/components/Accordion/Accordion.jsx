@@ -17,48 +17,59 @@ const Accordion = ({ info }) => {
     setExpanded(isExpanded ? panel : false);
   };
 
-  return info.map((element, index) => {
-    const theme = useTheme();
-    const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
-    return (
-      <MUIAccordion
-        sx={{
-          width: "70%",
-          backgroundColor: "transparent",
-        }}
-        key={index}
-        expanded={expanded === `panel + ${index}`}
-        onChange={handleChange(`panel + ${index}`)}
-      >
-        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography
+  return (
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        flexDirection: "column",
+      }}
+    >
+      {info.map((element, index) => {
+        return (
+          <MUIAccordion
             sx={{
-              fontSize: (theme) =>
-                isMobile
-                  ? theme.typography.pxToRem(14)
-                  : theme.typography.pxToRem(25),
+              width: isMobile ? "100%" : "80%",
+              backgroundColor: "transparent",
             }}
+            key={index}
+            expanded={expanded === `panel + ${index}`}
+            onChange={handleChange(`panel + ${index}`)}
           >
-            {element.question}
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography
-            sx={{
-              color: "text.secondary",
-              fontSize: (theme) =>
-                isMobile
-                  ? theme.typography.pxToRem(14)
-                  : theme.typography.pxToRem(25),
-            }}
-          >
-            {element.answer}
-          </Typography>
-        </AccordionDetails>
-      </MUIAccordion>
-    );
-  });
+            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+              <Typography
+                sx={{
+                  fontWeight: "bold",
+                  fontSize: (theme) =>
+                    isMobile
+                      ? theme.typography.pxToRem(14)
+                      : theme.typography.pxToRem(25),
+                }}
+              >
+                {element.question}
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography
+                sx={{
+                  color: "text.secondary",
+                  fontSize: (theme) =>
+                    isMobile
+                      ? theme.typography.pxToRem(14)
+                      : theme.typography.pxToRem(25),
+                }}
+              >
+                {element.answer}
+              </Typography>
+            </AccordionDetails>
+          </MUIAccordion>
+        );
+      })}
+    </div>
+  );
 };
 
 Accordion.propTypes = {
