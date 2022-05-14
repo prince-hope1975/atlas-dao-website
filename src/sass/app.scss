@@ -9,3 +9,28 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-image: url("../images/back.png");
 }
+
+.home {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3000px;
+}
+
+.astronaut{
+  background-image: url("../images/parallax/earth.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 -50px 60px 0 #000;
+
+  width: 100%;
+  height: 30%;
+  display: block;
+  text-align: center;
+  
+  img {
+    height: 500px;
+  }
+}
