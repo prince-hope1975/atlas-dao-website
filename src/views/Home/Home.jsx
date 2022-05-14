@@ -1,8 +1,12 @@
 import React from "react";
-import PropTypes from "prop-types";
+import Astronaut from "./Astronaut.jsx"
 
 const Home = (props) => {
-  return <div style={{ height: "1000px" }}>Home</div>;
+  return  <div className="home">    
+              <div className="astronaut">
+                  <Astronaut/>
+              </div>        
+          </div>
 };
 
 Home.propTypes = {};
