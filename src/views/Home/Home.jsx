@@ -5,6 +5,7 @@ import atlas1 from "../../images/parallax/atlas1.png";
 import atlas2 from "../../images/parallax/atlas2.png";
 import atlas3 from "../../images/parallax/atlas3.png";
 import atlas4 from "../../images/parallax/atlas4.png";
+import SkyMonks from "./SkyMonks.jsx";
 
 const dataCards = [
   {
@@ -34,6 +35,7 @@ const Home = (props) => {
               <div className="astronaut">
               <Astronaut/>
               </div>
+              <SkyMonks/>
               <div className="datacard">
               {dataCards.map((item, index) => (
                 <DataCard data={item} index={index} />
