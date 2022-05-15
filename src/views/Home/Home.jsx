@@ -5,8 +5,8 @@ import atlas1 from "../../images/parallax/atlas1.png";
 import atlas2 from "../../images/parallax/atlas2.png";
 import atlas3 from "../../images/parallax/atlas3.png";
 import atlas4 from "../../images/parallax/atlas4.png";
-import SkyMonks from "./SectionTitle.jsx";
 import SectionTitle from "./SectionTitle.jsx";
+import Perks from "./Perk.jsx";
 
 const dataCards = [
   {
@@ -43,6 +43,7 @@ const Home = (props) => {
               ))}
               <SectionTitle data={{title: "Perks"}}/>
               </div>
+              <Perks/>
           </div>
 };
 
