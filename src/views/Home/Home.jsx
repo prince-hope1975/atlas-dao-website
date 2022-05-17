@@ -1,50 +1,56 @@
 import React from "react";
+import { Grid } from "@mui/material";
+
 import Astronaut from "./Astronaut.jsx";
-import DataCard from "./DataCard.jsx";
-import atlas1 from "../../images/parallax/atlas1.png";
-import atlas2 from "../../images/parallax/atlas2.png";
-import atlas3 from "../../images/parallax/atlas3.png";
-import atlas4 from "../../images/parallax/atlas4.png";
-import SectionTitle from "./SectionTitle.jsx";
-import Perks from "./Perk.jsx";
+import ParalaxSectionTitle from "../../components/SectionTitle/ParalaxSectionTitle.jsx";
+import Perk from "../../components/Perk/Perk";
+import ParalaxCard from "../../components/ParalaxCard/ParalaxCard.jsx";
 
-const dataCards = [
-  {
-    title: "Sky Monk Gives Back",
-    content: "10% of the NFT proceeds will go to start a Non-profit organisation that provides food and water to impoverished communities around the world.",
-    image: atlas1
-  },
-  {
-    title: "We value Our Community",
-    content: "All the funds raised will be HELD in a multisig wallet with different well known trustworthy cosmonauts.",
-    image: atlas2
-  },
-  {
-    title: "No Whitelist",
-    content: "We don't believe whitelists will bring value to our community.",
-    image: atlas3
-  },
-  {
-    title: "Sky Monk NFT Holder Help",
-    content: "Sky Monk holders will play an integral role in the project. They will Participate in governance and early access to products release.",
-    image: atlas4
-  }
-];
+import { dataCards, perks } from "./data.js";
 
-const Home = (props) => {
-  return  <div className="home">    
-              <div className="astronaut">
-              <Astronaut/>
-              </div>
-              <SectionTitle data={{title: "Sky Monks"}}/>
-              <div className="datacard">
-              {dataCards.map((item, index) => (
-                <DataCard data={item} index={index} />
-              ))}
-              <SectionTitle data={{title: "Perks"}}/>
-              </div>
-              <Perks/>
-          </div>
+const Home = () => {
+  return (
+    <Grid container spacing={2}>
+      <Grid item xs={12} sm={12} md={12} lg={12}>
+        <div className="astronaut-background">
+          <Astronaut />
+        </div>
+      </Grid>
+
+      <ParalaxSectionTitle title="Sky Monks" />
+      {dataCards.map((item, index) => (
+        <ParalaxCard data={item} index={index} key={index} />
+      ))}
+
+      <ParalaxSectionTitle title="Perks" />
+      <Grid
+        item
+        container
+        justifyContent="center"
+        alignItems="center"
+        flexDirection="column"
+        sx={{ marginTop: "-380px" }}
+        xs={12}
+        sm={12}
+        md={12}
+        lg={12}
+      >
+        {perks.map((item, index) => (
+          <Perk
+            key={index}
+            title={item.title}
+            Icon={item.icon}
+            translateX={item.translateX}
+            translateY={item.translateY}
+          />
+        ))}
+      </Grid>
+
+      <Grid item xs={12} sm={12} md={12} lg={12}>
+        <div style={{ height: "300px" }}></div>
+      </Grid>
+    </Grid>
+  );
 };
 
 Home.propTypes = {};

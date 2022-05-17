@@ -21,7 +21,6 @@ const BaseLayout = () => {
         <Grid
           container
           sx={{
-            padding: "0 80px",
             marginTop: (theme) => theme.spacing(6),
             marginBottom: (theme) => theme.spacing(6),
           }}
