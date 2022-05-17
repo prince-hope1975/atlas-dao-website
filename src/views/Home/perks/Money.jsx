@@ -10,6 +10,7 @@ const Money = (props) => {
             translateX={["0px","500px"]}
             easing={[.46,1.14,.26,1.01]}
             >
+              <h1>Atlas DAO Token Airdrop</h1>
                 <PaidIcon sx={{
                 fontSize: "250px",
                 marginBottom: "24px",

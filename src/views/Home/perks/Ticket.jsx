@@ -11,6 +11,7 @@ const Ticket = (props) => {
             translateX={["0px","250px"]}
             easing={[.46,1.14,.26,1.01]}
             >
+              <h1>Cosmoverse Ticket Raffles</h1>
                 <LocalActivityIcon sx={{
                 fontSize: "250px",
                 marginBottom: "24px",

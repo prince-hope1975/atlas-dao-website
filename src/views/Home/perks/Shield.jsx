@@ -11,6 +11,7 @@ const Trophy = (props) => {
             translateX={["0px","-50px"]}
             easing={[.46,1.14,.26,1.01]}
             >
+              <h1>Validator Rewards</h1>
                 <EmojiEventsIcon sx={{
                 fontSize: "250px",
                 marginBottom: "24px",
