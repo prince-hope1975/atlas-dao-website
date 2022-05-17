@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid } from "@mui/material";
+import { Grid, useMediaQuery, useTheme } from "@mui/material";
 
 import Astronaut from "./Astronaut.jsx";
 import ParalaxSectionTitle from "../../components/SectionTitle/ParalaxSectionTitle.jsx";
@@ -9,6 +9,9 @@ import ParalaxCard from "../../components/ParalaxCard/ParalaxCard.jsx";
 import { dataCards, perks } from "./data.js";
 
 const Home = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+
   return (
     <Grid container spacing={2}>
       <Grid item xs={12} sm={12} md={12} lg={12}>
@@ -40,8 +43,10 @@ const Home = () => {
             key={index}
             title={item.title}
             Icon={item.icon}
-            translateX={item.translateX}
-            translateY={item.translateY}
+            translateX={isMobile ? item.translateX * 0.5 : item.translateX}
+            translateY={
+              isMobile ? item.translateY * 0.5 + 100 : item.translateY
+            }
           />
         ))}
       </Grid>

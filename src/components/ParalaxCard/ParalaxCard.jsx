@@ -6,7 +6,9 @@ import { Parallax } from "react-scroll-parallax";
 const ParalaxCard = ({ data, index }) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
-  const direction = index % 2 == 0 ? ["300px", "0px"] : ["-300px", "0px"];
+  const translateX = isMobile ? 100 : 200;
+  const direction =
+    index % 2 == 0 ? [`${translateX}px`, "0px"] : [`${-translateX}px`, "0px"];
 
   return (
     <Grid
@@ -44,7 +46,13 @@ const ParalaxCard = ({ data, index }) => {
             gap: "8px",
           }}
         >
-          <div>{data.title}</div>
+          <h1
+            style={{
+              textAlign: isMobile ? "center" : "",
+            }}
+          >
+            {data.title}
+          </h1>
           <div
             style={{
               textAlign: isMobile ? "center" : "",

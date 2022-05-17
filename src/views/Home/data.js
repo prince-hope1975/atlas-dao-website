@@ -34,25 +34,25 @@ export const perks = [
   {
     title: "Commercial Rights",
     icon: Policy,
-    translateX: "-250px",
-    translateY: "300px",
+    translateX: -250,
+    translateY: 300,
   },
   {
     title: "Cosmoverse Ticket Raffles",
     icon: LocalActivity,
-    translateX: "250px",
-    translateY: "80px",
+    translateX: 250,
+    translateY: 80,
   },
   {
     title: "Validator Rewards",
     icon: EmojiEvents,
-    translateX: "-250px",
-    translateY: "150px",
+    translateX: -250,
+    translateY: 150,
   },
   {
     title: "Atlas DAO Token Airdrop",
     icon: Paid,
-    translateX: "250px",
-    translateY: "-140px",
+    translateX: 250,
+    translateY: -140,
   },
 ];

@@ -18,7 +18,11 @@ const ParalaxSectionTitle = ({ title }) => {
       md={12}
       lg={12}
     >
-      <Parallax opacity={[0, 1]} easing={[0.76, 1.17, 0.52, 1]}>
+      <Parallax
+        style={{ textAlign: "center" }}
+        opacity={[0, 1]}
+        easing={[0.76, 1.17, 0.52, 1]}
+      >
         <span className="section-title">{title}</span>
       </Parallax>
     </Grid>
