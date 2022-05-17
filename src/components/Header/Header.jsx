@@ -24,7 +24,7 @@ const Header = ({ window }) => {
   const menuEntries = [
     { label: "Home", url: "/" },
     { label: "Roadmap", url: "/roadmap" },
-    { label: "Atlas DAO", url: "/dao" },
+    { label: "Sky Monks", url: "/sky-monks" },
     { label: "EWH Foundation", url: "/fundation" },
     { label: "Gallery", url: "/gallery" },
     // { label: "Validators", url: "/validators" },
