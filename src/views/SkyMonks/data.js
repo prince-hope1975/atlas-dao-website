@@ -44,7 +44,7 @@ export const perks = [
     translateY: 80,
   },
   {
-    title: "Validator Rewards",
+    title: "Validator Nodes Airdrops",
     icon: EmojiEvents,
     translateX: -250,
     translateY: 150,
