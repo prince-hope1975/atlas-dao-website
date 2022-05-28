@@ -187,7 +187,7 @@ body {
   justify-content: center;
   text-align: center;
 
-  .validator-banner{
+  .validator-title{
     width: 100vw;
     margin: auto;
   }
@@ -207,5 +207,55 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  .validator-logo{
+    width: 10vw;
+    margin: auto;
+  }
 }
 
+.validator-chains{
+  margin: 5vh 10vw;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.validator-token {
+  width: 25vw;
+  margin: 0 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 5vh;
+  .validator-token-right{
+    img{
+      width: 7vw;
+    }
+    margin: auto;
+  }
+  .validator-token-left{
+    margin: auto;
+    h1{
+      font-size: 2vw;
+    }
+  }
+  a{
+    background: #aaa;
+    border: none;
+    text-decoration: none;
+    border-radius: 8%;
+    color: white;
+    font-weight: 700;
+    font-size: large;
+    width: 10vw;
+    padding: 5px;
+    margin: 2vh auto 2vh;
+  }
+}
+
+.chain-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

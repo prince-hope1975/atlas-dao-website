@@ -8,6 +8,7 @@ import Home from "../views/Home/Home";
 import SkyMonks from "../views/SkyMonks/SkyMonks";
 import Roadmap from "../views/Roadmap/Roadmap";
 import Gallery from "../views/Gallery/Gallery";
+import Validator from "../views/Validator/Validator";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/" element={<BaseLayout />}>
           <Route path="" element={<Home />} />
           <Route path="/sky-monks" element={<SkyMonks />} />
+          <Route path="/validator" element={<Validator />} />
           <Route path="/roadmap" element={<Roadmap />} />
           <Route path="/gallery" element={<Gallery />} />
 
