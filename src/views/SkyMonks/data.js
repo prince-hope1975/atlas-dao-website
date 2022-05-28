@@ -1,8 +1,8 @@
 import { EmojiEvents, LocalActivity, Paid, Policy } from "@mui/icons-material";
-import atlas1 from "../../images/parallax/atlas1.png";
-import atlas2 from "../../images/parallax/atlas2.png";
-import atlas3 from "../../images/parallax/atlas3.png";
-import atlas4 from "../../images/parallax/atlas4.png";
+import atlas1 from "../../images/parallax/atlas1.jpg";
+import atlas2 from "../../images/parallax/atlas2.jpg";
+import atlas3 from "../../images/parallax/atlas3.jpg";
+import atlas4 from "../../images/parallax/atlas4.jpg";
 
 export const dataCards = [
   {

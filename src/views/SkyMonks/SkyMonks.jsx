@@ -1,12 +1,12 @@
 import React from "react";
 import { Grid, useMediaQuery, useTheme } from "@mui/material";
-
-import Astronaut from "./Astronaut.jsx";
 import ParalaxSectionTitle from "../../components/SectionTitle/ParalaxSectionTitle.jsx";
 import Perk from "../../components/Perk/Perk";
 import ParalaxCard from "../../components/ParalaxCard/ParalaxCard.jsx";
 
 import { dataCards, perks } from "./data.js";
+import atlasGif from "../../images/skyMonks.gif";
+import { height } from "@mui/system";
 
 const SkyMonks = () => {
   const theme = useTheme();
@@ -15,12 +15,12 @@ const SkyMonks = () => {
   return (
     <Grid container spacing={2}>
       <Grid item xs={12} sm={12} md={12} lg={12}>
-        <div className="astronaut-background">
-          <Astronaut />
+        <div className="sky-monks-title">
+          <ParalaxSectionTitle title="Sky Monks" />
+          <img src={atlasGif} className="sky-monks-gif"/>
         </div>
       </Grid>
 
-      <ParalaxSectionTitle title="Sky Monks" />
       {dataCards.map((item, index) => (
         <ParalaxCard data={item} index={index} key={index} />
       ))}
