@@ -7,6 +7,46 @@ import ParalaxCard from "../../components/ParalaxCard/ParalaxCard.jsx";
 import { dataCards, perks } from "./data.js";
 import atlasGif from "../../images/skyMonks.gif";
 
+import founder from "../../images/team/founder.png";
+import foundingMember from "../../images/team/founding_member.png";
+import artist from "../../images/team/artist.png";
+import foundingMember2 from "../../images/team/founding_member_2.png";
+import creativeDirector from "../../images/team/creative_director.png";
+import SimpleImageComponent from "../Gallery/SimpleImageComponent/SimpleImageComponent.jsx";
+
+const team = [
+  {
+    image: founder,
+    description: "Founder",
+    url: "https://twitter.com/jacobremy0",
+    lg: 4,
+  },
+  {
+    image: foundingMember,
+    description: "Founding Member",
+    url: "https://twitter.com/erikchain_io",
+    lg: 4,
+  },
+  {
+    image: artist,
+    description: "Artist",
+    url: "https://twitter.com/rendrasc",
+    lg: 4,
+  },
+  {
+    image: foundingMember2,
+    description: "Founding Member",
+    url: "https://twitter.com/sir_arndt",
+    lg: 6,
+  },
+  {
+    image: creativeDirector,
+    description: "Creative director",
+    url: "https://twitter.com/chellyysavv",
+    lg: 6,
+  },
+];
+
 const SkyMonks = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
@@ -79,6 +119,22 @@ const SkyMonks = () => {
               isMobile ? item.translateY * 0.5 + 100 : item.translateY
             }
           />
+        ))}
+      </Grid>
+
+      <Grid
+        container
+        spacing={2}
+        sx={{
+          marginTop: "100px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <ParalaxSectionTitle title="Our team" />
+        {team.map((item, index) => (
+          <SimpleImageComponent key={index} data={item} />
         ))}
       </Grid>
 
