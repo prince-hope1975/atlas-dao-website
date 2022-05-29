@@ -61,11 +61,12 @@ const Home = () => {
 
   return (
     <div className="container">
+      <ParalaxSectionTitle title="Atlas dao" />
       <div className="fade" />
       <section className="star-wars">
         <div className="crawl">
           <div className="title">
-            <h1>Atlas DAO</h1>
+            <h1></h1>
           </div>
 
           <p>

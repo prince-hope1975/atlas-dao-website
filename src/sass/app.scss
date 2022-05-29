@@ -268,17 +268,18 @@ body {
 .fade {
   position: relative;
   width: 100%;
-  min-height: 60vh;
+  min-height: 50vh;
   top: -25px;
   background-image: linear-gradient(0deg, transparent, black 75%);
   z-index: 1;
 }
 
 .star-wars {
+  top: -500px;
   display: flex;
   justify-content: center;
   position: relative;
-  height: 100px;
+  height: 500px;
   color: #ffffff;
   font-family: "Pathway Gothic One", sans-serif;
   font-size: 500%;
@@ -287,6 +288,8 @@ body {
   line-height: 150%;
   perspective: 400px;
   text-align: justify;
+
+  overflow: hidden;
 }
 
 .crawl {
