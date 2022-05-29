@@ -29,41 +29,13 @@ const chains = [
     logo: stars,
     apr: "apr",
     description: "has aimed to have a vibrant ecosystem of solutions bringing DeFi to the Cos",
-    link: "https://www.google.com"
+    link: "https://wallet.keplr.app/#/stargaze/stake?tab=inactive-validators&modal=stake&validator=starsvaloper1heysdk56e4t8vaq5msmek2hsnc6guv8mhklcqx"
   },
   {
-    title: "title 2",
+    title: "Akash",
     logo: stars,
     apr: "apr",
-    description: "has aimed to have a vibrant ecosystem of solutions bringing DeFi to the Cos",
-    link: "https://www.google.com"
-  },
-  {
-    title: "title 3",
-    logo: stars,
-    apr: "apr",
-    description: "has aimed to have a vibrant ecosystem of solutions bringing DeFi to the Cos",
-    link: "https://www.google.com"
-  },
-  {
-    title: "title 1",
-    logo: stars,
-    apr: "apr",
-    description: "has aimed to have a vibrant ecosystem of solutions bringing DeFi to the Cos",
-    link: "https://www.google.com"
-  },
-  {
-    title: "title 2",
-    logo: stars,
-    apr: "apr",
-    description: "has aimed to have a vibrant ecosystem of solutions bringing DeFi to the Cos",
-    link: "https://www.google.com"
-  },
-  {
-    title: "title 3",
-    logo: stars,
-    apr: "apr",
-    description: "has aimed to have a vibrant ecosystem of solutions bringing DeFi to the Cos",
+    description: "Coming Soon",
     link: "https://www.google.com"
   }
 ]
@@ -72,9 +44,9 @@ const Validator = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
-  let chainRow = [];
+  const chainRow = [];
   let varRow =[];
-  for(var i=1; i<=chains.length; i++){
+  for(let i=1; i<=chains.length; i++){
     let currentChain = chains[i-1];
     varRow.push(Chain(currentChain));
     if (i%3 == 0){
