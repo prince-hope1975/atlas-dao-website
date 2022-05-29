@@ -19,7 +19,7 @@ const App = () => {
           <Route path="/sky-monks" element={<SkyMonks />} />
           <Route path="/validator" element={<Validator />} />
           <Route path="/roadmap" element={<Roadmap />} />
-          <Route path="/team" element={<Gallery />} />
+          <Route path="/gallery" element={<Gallery />} />
 
           <Route path="*" element={<div>hola</div>} />
         </Route>
