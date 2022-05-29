@@ -2,7 +2,7 @@
 import React from "react";
 import { render } from "react-dom";
 import App from "./components/App";
-import { ParallaxProvider } from 'react-scroll-parallax';
+import { ParallaxProvider } from "react-scroll-parallax";
 
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
@@ -25,6 +25,9 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 // });
 
 const themeOptions_ligth = createTheme({
+  typography: {
+    fontFamily: ["Russo One", "sans-serif"].join(","),
+  },
   palette: {
     mode: "dark",
     primary: {
@@ -39,7 +42,7 @@ const themeOptions_ligth = createTheme({
 render(
   <ThemeProvider theme={themeOptions_ligth}>
     <ParallaxProvider>
-    <App />
+      <App />
     </ParallaxProvider>
   </ThemeProvider>,
   document.getElementById("app")

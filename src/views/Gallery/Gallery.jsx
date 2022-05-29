@@ -7,6 +7,7 @@ import artist from "../../images/team/artist.png";
 import foundingMember2 from "../../images/team/founding_member_2.png";
 import creativeDirector from "../../images/team/creative_director.png";
 import SimpleImageComponent from "./SimpleImageComponent/SimpleImageComponent";
+import ParalaxSectionTitle from "../../components/SectionTitle/ParalaxSectionTitle";
 
 const team = [
   {
@@ -52,6 +53,7 @@ const Gallery = () => {
         alignItems: "center",
       }}
     >
+      <ParalaxSectionTitle title="Our team" />
       {team.map((item, index) => (
         <SimpleImageComponent key={index} data={item} />
       ))}

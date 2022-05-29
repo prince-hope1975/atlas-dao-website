@@ -26,7 +26,7 @@ const Header = ({ window }) => {
     { label: "Roadmap", url: "/roadmap" },
     { label: "Sky Monks", url: "/sky-monks" },
     { label: "Validator", url: "/validator" },
-    { label: "Gallery", url: "/gallery" },
+    { label: "Team", url: "/team" },
     // { label: "Validators", url: "/validators" },
   ];
 

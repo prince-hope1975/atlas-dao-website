@@ -21,8 +21,8 @@ import roadmap4 from "../../images/roadmap/roadmap_4.svg";
 import { RocketLaunch } from "@mui/icons-material";
 
 import { stepTextContent, faqList } from "./info";
-import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import Divider from "../../components/Divider/Divider";
+import ParalaxSectionTitle from "../../components/SectionTitle/ParalaxSectionTitle";
 
 const images = {
   0: <img src={roadmap2}></img>,
@@ -51,7 +51,7 @@ const Roadmap = () => {
 
   return (
     <Stack sx={{ width: "100%" }} spacing={4}>
-      <SectionTitle>roadmap</SectionTitle>
+      <ParalaxSectionTitle title="Roadmap" />
       <Stepper
         alternativeLabel
         activeStep={activeStep}
@@ -111,7 +111,7 @@ const Roadmap = () => {
       <Divider>
         <img style={{ width: "40px" }} src={roadmap4} />
       </Divider>
-      <SectionTitle>faq</SectionTitle>
+      <ParalaxSectionTitle title="Faq" />
       <Accordion info={faqList} />
     </Stack>
   );

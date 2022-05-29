@@ -6,7 +6,6 @@ import ParalaxCard from "../../components/ParalaxCard/ParalaxCard.jsx";
 
 import { dataCards, perks } from "./data.js";
 import atlasGif from "../../images/skyMonks.gif";
-import { height } from "@mui/system";
 
 const SkyMonks = () => {
   const theme = useTheme();
@@ -14,11 +13,43 @@ const SkyMonks = () => {
 
   return (
     <Grid container spacing={2}>
-      <Grid item xs={12} sm={12} md={12} lg={12}>
-        <div className="sky-monks-title">
+      <Grid
+        item
+        container
+        xs={12}
+        sm={12}
+        md={12}
+        lg={12}
+        sx={{
+          marginTop: "100px",
+          paddingBottom: "300px",
+        }}
+      >
+        <Grid item container xs={12} sm={12} md={2} lg={2}></Grid>
+        <Grid item container alignItems="center" xs={12} sm={12} md={4} lg={4}>
           <ParalaxSectionTitle title="Sky Monks" />
-          <img src={atlasGif} className="sky-monks-gif"/>
-        </div>
+        </Grid>
+        <Grid
+          item
+          container
+          xs={12}
+          sm={12}
+          md={4}
+          lg={4}
+          justifyContent="center"
+          alignItems="center"
+        >
+          <img
+            src={atlasGif}
+            style={{
+              width: isMobile ? "230px" : "500px",
+              height: isMobile ? "230px" : "500px",
+              borderRadius: "50%",
+              boxShadow: "0px 0px 40px 20px rgb(107, 246, 246)",
+            }}
+          />
+        </Grid>
+        <Grid item container xs={12} sm={12} md={2} lg={2}></Grid>
       </Grid>
 
       {dataCards.map((item, index) => (

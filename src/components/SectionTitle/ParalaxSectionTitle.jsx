@@ -1,9 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Parallax } from "react-scroll-parallax";
-import { Grid } from "@mui/material";
+import { Grid, Typography, useMediaQuery } from "@mui/material";
+import { useTheme } from "@mui/system";
 
 const ParalaxSectionTitle = ({ title }) => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+
   return (
     <Grid
       item
@@ -20,10 +24,24 @@ const ParalaxSectionTitle = ({ title }) => {
     >
       <Parallax
         style={{ textAlign: "center" }}
-        opacity={[0, 1]}
+        opacity={[0, 1.5]}
         easing={[0.76, 1.17, 0.52, 1]}
       >
-        <span className="section-title">{title}</span>
+        <Typography
+          sx={{
+            letterSpacing: theme.spacing(1),
+            fontSize: isMobile
+              ? theme.typography.pxToRem(40)
+              : theme.typography.pxToRem(80),
+            textTransform: "uppercase",
+            fontWeight: "bold",
+            color: "#f5f5f5",
+            textShadow:
+              "1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191, 1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4)",
+          }}
+        >
+          {title}
+        </Typography>
       </Parallax>
     </Grid>
   );
