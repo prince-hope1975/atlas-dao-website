@@ -10,18 +10,19 @@ const SimpleImageComponent = ({ data }) => {
       xs={12}
       sm={12}
       md={6}
-      lg={data.lg}
+      lg={data.lg - 1}
       sx={{ display: "flex", justifyContent: "center" }}
     >
       <Box
         // onClick={() => (parent.location = data.url)}
         onClick={() => parent.open(data.url)}
         sx={{
+          boxShadow: "0px 0px 40px 20px rgb(107, 246, 246)",
           cursor: "pointer",
-          border: "3pt solid #3c48cb",
+          border: "3pt solid rgb(80, 206, 246)",
           borderRadius: "50%",
           background: "black",
-          margin: "40px 0",
+          margin: "40px 0px",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",

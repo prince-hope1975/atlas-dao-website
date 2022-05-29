@@ -53,10 +53,15 @@ const Gallery = () => {
         alignItems: "center",
       }}
     >
-      <ParalaxSectionTitle title="Our team" />
-      {team.map((item, index) => (
-        <SimpleImageComponent key={index} data={item} />
-      ))}
+      <ParalaxSectionTitle title="The Gallery" />
+      <div className="team-info">
+        Coming Soon
+      </div>
+      {/* <>
+        {team.map((item, index) => (
+          <SimpleImageComponent key={index} data={item} />
+        ))}
+      </> */}
     </Grid>
   );
 };
