@@ -32,7 +32,7 @@ const Footer = () => {
         sx={{ width: "80%", marginBottom: "25px" }}
       >
         <Grid item>
-          <Typography>Copyright © 2022</Typography>
+          <Typography>Copyright © 2022 // Powered by Akash</Typography>
         </Grid>
         <Grid item sx={{ display: "flex", alignItems: "center" }}>
           {icons.map((item, index) => (
