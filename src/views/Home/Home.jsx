@@ -70,12 +70,10 @@ const Home = () => {
           </div>
 
           <p>
-            Atlas DAO is a Community focused DAO on empowering and creating
-            products for everyday people. In the present day, we lack crypto
-            usage in the business world. This is why we need a DAO to fill in
-            the gap and benefit the crypto ecosystem at large. We need a
-            platform that will create, buy, and fund real world business and use
-            cryptocurrency as a base pair of currency.
+          A Community focused DAO on empowering and creating
+            products for everyday people. A platform that will create, 
+            buy, and fund real world business using cryptocurrency 
+            as a base pair of currency.
           </p>
           <br />
           <br />
