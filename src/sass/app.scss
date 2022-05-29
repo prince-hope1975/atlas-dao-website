@@ -258,6 +258,13 @@ body {
   justify-content: space-around;
 }
 
+.container {
+  width: 100vw;
+  height: 78vh;
+  background: transparent;
+  overflow: hidden;
+}
+
 .fade {
   position: relative;
   width: 100%;
@@ -271,8 +278,8 @@ body {
   display: flex;
   justify-content: center;
   position: relative;
-  height: 800px;
-  color: #feda4a;
+  height: 100px;
+  color: #ffffff;
   font-family: "Pathway Gothic One", sans-serif;
   font-size: 500%;
   font-weight: 600;

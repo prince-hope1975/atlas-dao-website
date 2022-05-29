@@ -26,13 +26,10 @@ const Home = () => {
 
     console.warn(delta);
 
-    // const classes =
-
-    // $(".crawl").css({
-    //   top: o.top + "px",
-    //   transform:
-    //     "rotateX(" + o.rotateX + "deg) translateZ(" + o.translateZ + "px)",
-    // });
+    const crawlText = document.getElementsByClassName("crawl");
+    crawlText[0].style.top = o.top + "px";
+    crawlText[0].style.transform =
+      "rotateX(" + o.rotateX + "deg) translateZ(" + o.translateZ + "px)";
 
     return false;
   };
@@ -63,33 +60,49 @@ const Home = () => {
   };
 
   return (
-    <>
+    <div className="container">
       <div className="fade" />
       <section className="star-wars">
         <div className="crawl">
           <div className="title">
-            <p>Episode IV</p>
-            <h1>A New Hope</h1>
+            <h1>Atlas DAO</h1>
           </div>
 
           <p>
-            It is a period of civil war. Rebel spaceships, striking from a
-            hidden base, have won their first victory against the evil Galactic
-            Empire.
+            Atlas DAO is a Community focused DAO on empowering and creating
+            products for everyday people. In the present day, we lack crypto
+            usage in the business world. This is why we need a DAO to fill in
+            the gap and benefit the crypto ecosystem at large. We need a
+            platform that will create, buy, and fund real world business and use
+            cryptocurrency as a base pair of currency.
           </p>
+          <br />
+          <br />
           <p>
-            During the battle, Rebel spies managed to steal secret plans to the
-            Empire’s ultimate weapon, the DEATH STAR, an armored space station
-            with enough power to destroy an entire planet.
+            Cryptocurrency offers a lot of potential and will change the global
+            economy for the better. It is the time for creative thinking and
+            collaboration to usher in a new era. The DAO model is the way
+            forward for corporations and companies. That's why Atlas DAO was
+            created. We will strive to be a user-centric DAO by the people and
+            for the people. We will make it impossible to survive without having
+            the users best interest at heart. We will be transparent, prioritize
+            security and always work hand by hand with and for the community.
           </p>
+          <br />
+          <br />
           <p>
-            Pursued by the Empire’s sinister agents, Princess Leia races home
-            aboard her starship, custodian of the stolen plans that can save her
-            people and restore freedom to the galaxy…
+            We will prioritize user wealth growth. We want to bring wealth to
+            our users in a safe, decentralized manner while being held
+            accountable for every step we take. As we grow our platform, we will
+            do our best to grow the trust you set on us. There won't be a
+            one-man or one-point of failure. This is the strength of
+            decentralization. As a platform, we will focus on bringing a lot
+            more users to the cosmos ecosystem. Our hopes and dreams are big,
+            but our work will rise to the challenge.
           </p>
         </div>
       </section>
-    </>
+    </div>
   );
 
   // return (
@@ -120,12 +133,12 @@ const Home = () => {
   //               letterSpacing: "2px",
   //             }}
   //           >
-  //             Atlas DAO is a Community focused DAO on empowering and creating
-  //             products for everyday people. In the present day, we lack crypto
-  //             usage in the business world. This is why we need a DAO to fill in
-  //             the gap and benefit the crypto ecosystem at large. We need a
-  //             platform that will create, buy, and fund real world business and
-  //             use cryptocurrency as a base pair of currency.
+  // Atlas DAO is a Community focused DAO on empowering and creating
+  // products for everyday people. In the present day, we lack crypto
+  // usage in the business world. This is why we need a DAO to fill in
+  // the gap and benefit the crypto ecosystem at large. We need a
+  // platform that will create, buy, and fund real world business and
+  // use cryptocurrency as a base pair of currency.
   //           </Card>
   //         </Parallax>
   //       </Grid>
@@ -143,15 +156,15 @@ const Home = () => {
   //               letterSpacing: "2px",
   //             }}
   //           >
-  //             Cryptocurrency offers a lot of potential and will change the
-  //             global economy for the better. It is the time for creative
-  //             thinking and collaboration to usher in a new era. The DAO model is
-  //             the way forward for corporations and companies. That's why Atlas
-  //             DAO was created. We will strive to be a user-centric DAO by the
-  //             people and for the people. We will make it impossible to survive
-  //             without having the users best interest at heart. We will be
-  //             transparent, prioritize security and always work hand by hand with
-  //             and for the community.
+  // Cryptocurrency offers a lot of potential and will change the
+  // global economy for the better. It is the time for creative
+  // thinking and collaboration to usher in a new era. The DAO model is
+  // the way forward for corporations and companies. That's why Atlas
+  // DAO was created. We will strive to be a user-centric DAO by the
+  // people and for the people. We will make it impossible to survive
+  // without having the users best interest at heart. We will be
+  // transparent, prioritize security and always work hand by hand with
+  // and for the community.
   //           </Card>
   //         </Parallax>
   //       </Grid>
@@ -169,14 +182,14 @@ const Home = () => {
   //               letterSpacing: "2px",
   //             }}
   //           >
-  //             We will prioritize user wealth growth. We want to bring wealth to
-  //             our users in a safe, decentralized manner while being held
-  //             accountable for every step we take. As we grow our platform, we
-  //             will do our best to grow the trust you set on us. There won't be a
-  //             one-man or one-point of failure. This is the strength of
-  //             decentralization. As a platform, we will focus on bringing a lot
-  //             more users to the cosmos ecosystem. Our hopes and dreams are big,
-  //             but our work will rise to the challenge.
+  // We will prioritize user wealth growth. We want to bring wealth to
+  // our users in a safe, decentralized manner while being held
+  // accountable for every step we take. As we grow our platform, we
+  // will do our best to grow the trust you set on us. There won't be a
+  // one-man or one-point of failure. This is the strength of
+  // decentralization. As a platform, we will focus on bringing a lot
+  // more users to the cosmos ecosystem. Our hopes and dreams are big,
+  // but our work will rise to the challenge.
   //           </Card>
   //         </Parallax>
   //       </Grid>
