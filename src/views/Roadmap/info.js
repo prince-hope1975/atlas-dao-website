@@ -21,7 +21,7 @@ export const stepTextContent = {
   ],
 };
 
-export const faqList = [
+export const faqList = [ 
   {
     question: "Why does Atlas DAO need an NFT?",
     answer:
@@ -40,7 +40,12 @@ export const faqList = [
   {
     question: "Why should I stake with Atlas DAO Validator when it launches?",
     answer:
-      "Possible DAO token and NFT airdrop. Helping Atlas DAO realize the goal of lower rent for everyday people. You will also Contribute to the world end hunger foundation.",
+      "Possible Atlas DAO token and NFT airdrop. You will be Helping Atlas DAO realize the goal of providing affordable housing to regular folks, providing food, and water to impoverished communities, and more.",
+  },
+  {
+    question: "What is Sky Monks NFT?",
+    answer:
+      "Sky Monks is a PFP NFT with a wide range of utilities. ​​They are the pillar of Atlas DAO.",
   },
   {
     question: "When is the Mint Date?",
@@ -52,10 +57,10 @@ export const faqList = [
   },
   {
     question: "How much is the Mint? ",
-    answer: "TBA.",
+    answer: "800 Stars.",
   },
   {
-    question: "Where will I be able to Mint Atlas DAO NFT?",
-    answer: "Stargaze and 4 other tba nft platforms.",
+    question: "Where can get Sky Monks NFT",
+    answer: "You can go on Stargaze marketplace.",
   },
 ];
