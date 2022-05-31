@@ -8,27 +8,27 @@ import ParalaxSectionTitle from "../../components/SectionTitle/ParalaxSectionTit
 
 const data = [
   {
-    title: "title 1",
+    title: "Defending people",
     logo: shield,
-    content: "has aimed to have a vibrant ecosystem of solutions bringing DeFi to the Cos"
+    content: "Part of our rewards will go to provide food and water to impoverished communities."
   },
   {
-    title: "title 2",
+    title: "For the community",
     logo: globe,
-    content: "has aimed to have a vibrant ecosystem of solutions bringing DeFi to the Cos"
+    content: "We are a community-run validator node."
   },
   {
-    title: "title 3",
+    title: "Wanting to help to cosmos",
     logo: world,
-    content: "has aimed to have a vibrant ecosystem of solutions bringing DeFi to the Cos"
+    content: "We believe in the cosmos ecosystem and want to contribute."
   }
 ]
 const chains = [
   {
     title: "Stargaze",
     logo: stars,
-    apr: "apr",
-    description: "has aimed to have a vibrant ecosystem of solutions bringing DeFi to the Cos",
+    apr: "100%",
+    description: "The first interoperable L1 for NFTs. ",
     link: "https://wallet.keplr.app/#/stargaze/stake?tab=inactive-validators&modal=stake&validator=starsvaloper1heysdk56e4t8vaq5msmek2hsnc6guv8mhklcqx"
   },
   {
