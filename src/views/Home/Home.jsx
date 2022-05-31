@@ -69,137 +69,20 @@ const Home = () => {
             <h1></h1>
           </div>
 
-          <p>
-          A Community focused DAO on empowering and creating
-            products for everyday people. A platform that will create, 
-            buy, and fund real world business using cryptocurrency 
-            as a base pair of currency.
-          </p>
-          <br />
-          <br />
-          <p>
-            It is the time for creative thinking and collaboration to usher 
-            in a new era. That's why Atlas DAO was created. 
-            We will strive to be a user-centric DAO by the people and
-            for the people. We will make it impossible to survive without having
-            the users best interest at heart. We will be transparent, prioritize
-            security and always work hand by hand with and for the community.
-          </p>
-          <br />
-          <br />
-          <p>
-            With the purpose of bringing wealth to our users in a safe, 
-            decentralized manner while being held
-            accountable for every step we take. 
-            As a platform, we will focus on bringing a lot
-            more users to the cosmos ecosystem. Our hopes and dreams are big,
-            but our work will rise to the challenge.
-          </p>
+          <p>Community-focused DAO on empowering and creating products for regular folks. </p>
+          <br/>
+          <p>We seek to create a community of devs, builders, creators, and non-crypto natives to create Dapp and products which will benefit regular folks. </p>
+          <br/>
+          <p>We hope to empower and incentivize people to do good. </p>
+          <br/>
+          <p>Some of our long-term goals are to provide affordable housing, Nonprofit organization, and more. </p>
+          <br/>
+          <p>Join us if you would like to collaborate with us on those initiatives. </p>
+
         </div>
       </section>
     </div>
   );
-
-  // return (
-  //   <>
-  //     <Grid container justifyContent="center">
-  //       <Grid item xs={12} sm={12} md={12} lg={12}>
-  //         <ParalaxSectionTitle title="Atlas DAO" />
-  //       </Grid>
-
-  //       <Grid
-  //         item
-  //         xs={12}
-  //         sm={12}
-  //         md={12}
-  //         lg={12}
-  //         sx={{
-  //           padding: theme.spacing(5),
-  //         }}
-  //       ></Grid>
-
-  //       <Grid item xs={12} sm={12} md={12} lg={12}>
-  //         <Parallax speed={10} opacity={[0, 1.5]}>
-  //           <Card
-  //             sx={{
-  //               width: "100wv",
-  //               padding: theme.spacing(5),
-  //               fontSize: theme.typography.pxToRem(isMobile ? 20 : 30),
-  //               letterSpacing: "2px",
-  //             }}
-  //           >
-  // Atlas DAO is a Community focused DAO on empowering and creating
-  // products for everyday people. In the present day, we lack crypto
-  // usage in the business world. This is why we need a DAO to fill in
-  // the gap and benefit the crypto ecosystem at large. We need a
-  // platform that will create, buy, and fund real world business and
-  // use cryptocurrency as a base pair of currency.
-  //           </Card>
-  //         </Parallax>
-  //       </Grid>
-
-  //       <Divider>
-  //         <img style={{ width: "40px" }} src={roadmap4} />
-  //       </Divider>
-
-  //       <Grid item xs={12} sm={12} md={6} lg={6}>
-  //         <Parallax speed={10} opacity={[0, 1.5]}>
-  //           <Card
-  //             sx={{
-  //               padding: theme.spacing(5),
-  //               fontSize: theme.typography.pxToRem(isMobile ? 20 : 30),
-  //               letterSpacing: "2px",
-  //             }}
-  //           >
-  // Cryptocurrency offers a lot of potential and will change the
-  // global economy for the better. It is the time for creative
-  // thinking and collaboration to usher in a new era. The DAO model is
-  // the way forward for corporations and companies. That's why Atlas
-  // DAO was created. We will strive to be a user-centric DAO by the
-  // people and for the people. We will make it impossible to survive
-  // without having the users best interest at heart. We will be
-  // transparent, prioritize security and always work hand by hand with
-  // and for the community.
-  //           </Card>
-  //         </Parallax>
-  //       </Grid>
-
-  //       <Divider>
-  //         <img style={{ width: "40px" }} src={roadmap4} />
-  //       </Divider>
-
-  //       <Grid item xs={12} sm={12} md={6} lg={6}>
-  //         <Parallax speed={10} opacity={[0, 1.5]}>
-  //           <Card
-  //             sx={{
-  //               padding: theme.spacing(5),
-  //               fontSize: theme.typography.pxToRem(isMobile ? 20 : 30),
-  //               letterSpacing: "2px",
-  //             }}
-  //           >
-  // We will prioritize user wealth growth. We want to bring wealth to
-  // our users in a safe, decentralized manner while being held
-  // accountable for every step we take. As we grow our platform, we
-  // will do our best to grow the trust you set on us. There won't be a
-  // one-man or one-point of failure. This is the strength of
-  // decentralization. As a platform, we will focus on bringing a lot
-  // more users to the cosmos ecosystem. Our hopes and dreams are big,
-  // but our work will rise to the challenge.
-  //           </Card>
-  //         </Parallax>
-  //       </Grid>
-
-  //       <Grid
-  //         item
-  //         xs={12}
-  //         sm={12}
-  //         md={12}
-  //         lg={12}
-  //         sx={{ height: "300px" }}
-  //       ></Grid>
-  //     </Grid>
-  //   </>
-  // );
 };
 
 Home.propTypes = {};
