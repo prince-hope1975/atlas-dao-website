@@ -4,6 +4,7 @@ import globe from "../../images/globe.svg";
 import shield from "../../images/shield.svg";
 import world from "../../images/world.svg";
 import stars from "../../images/stars.png";
+import akash from "../../images/akash.png";
 import ParalaxSectionTitle from "../../components/SectionTitle/ParalaxSectionTitle";
 
 const data = [
@@ -33,10 +34,10 @@ const chains = [
   },
   {
     title: "Akash",
-    logo: stars,
-    apr: "apr",
+    logo: akash,
+    apr: "-",
     description: "Coming Soon",
-    link: "https://www.google.com"
+    link: "https://wallet.keplr.app/#/stargaze/stake?tab=inactive-validators&modal=stake&validator=starsvaloper1heysdk56e4t8vaq5msmek2hsnc6guv8mhklcqx"
   }
 ]
 
