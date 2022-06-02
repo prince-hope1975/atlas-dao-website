@@ -126,24 +126,30 @@ body {
       1px 30px 60px rgba(16, 16, 16, 0.4);
   }
 
-.validator-chars {
-  margin: 5vh 10vw;
-  width: 80vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.validator-card {
-  width: 30vw;
-  margin: 0 3vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  .validator-logo {
-    width: 10vw;
-    margin: auto;
+  .validator-chars {
+    margin: 5vh 10vw;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
-}
+  .validator-card {
+    width: 30vw;
+    margin: 0 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .validator-logo {
+      width: 10vw;
+      margin: auto;
+    }
+  }
+
+  .chain-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
 }
 
@@ -207,7 +213,7 @@ body {
 
   .validator-card {
     width: 80vw;
-    margin: 0 3vw 15vh;
+    margin: 0 10vw 15vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -217,6 +223,12 @@ body {
     }
   }  
 
+
+  .chain-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 
 .validator {
@@ -272,12 +284,6 @@ body {
     padding: 5px;
     margin: 2vh auto 2vh;
   }
-}
-
-.chain-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
 }
 
 .container {
