@@ -9,17 +9,17 @@ import ParalaxSectionTitle from "../../components/SectionTitle/ParalaxSectionTit
 
 const data = [
   {
-    title: "Defending people",
+    title: "We give back",
     logo: shield,
-    content: "Part of our rewards will go to provide food and water to impoverished communities."
+    content: "We will use our validator rewards to help further our mission of empowering the impoverished."
   },
   {
-    title: "For the community",
+    title: "Community",
     logo: globe,
     content: "We are a community-run validator node."
   },
   {
-    title: "Wanting to help to cosmos",
+    title: "IBC is the future",
     logo: world,
     content: "We believe in the cosmos ecosystem and want to contribute."
   }
@@ -29,7 +29,7 @@ const chains = [
     title: "Stargaze",
     logo: stars,
     apr: "100%",
-    description: "The first interoperable L1 for NFTs. ",
+    description: "The first interoperable L1 for NFTs.",
     link: "https://wallet.keplr.app/#/stargaze/stake?tab=inactive-validators&modal=stake&validator=starsvaloper1heysdk56e4t8vaq5msmek2hsnc6guv8mhklcqx"
   },
   {
@@ -107,6 +107,9 @@ const Chain = (file) => {
         <h1>
           {file.title}
         </h1>
+        <div>
+          APR: {file.apr}
+        </div>
         <div>
           {file.description}
         </div>
