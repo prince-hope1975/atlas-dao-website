@@ -63,12 +63,9 @@ const Home = () => {
   return (
     <div className="container">
       <ParalaxSectionTitle title="Atlas dao" color="#eaed23" boxShadow="#777" />
-      <div className="fade" style={{ top: isMobile ? "-75px" : "-25px" }} />
-      <section className="star-wars">
-        <div className="crawl" style={{ fontSize: isMobile ? "30%" : "100%" }}>
-          <div className="title">
-            <h1></h1>
-          </div>
+      <div className={isMobile ? "no-fade" : "fade"} style={{ top: isMobile ? "-75px" : "-25px" }} />
+      <section className={isMobile ? "star-wars-dead" : "star-wars"}>
+        <div className={isMobile ? "semicrawl" : "crawl"} style={{ fontSize: isMobile ? "30%" : "100%" }}>
 
           <p>
             We are a community focused DAO. Ultimately we hope that leads to
