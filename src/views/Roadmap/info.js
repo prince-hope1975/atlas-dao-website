@@ -25,7 +25,7 @@ export const faqList = [
   {
     question: "Why does Atlas DAO need an NFT?",
     answer:
-      "The Sky Monk NFT goal is to bring cosmonauts from all over the cosmos to Atlas DAO. Atlas DAO needs a group of dedicated Cosmonauts to help provide Utility and create crypto products for everyday people.",
+      "Sky Monks is a PFP NFT with a wide range of utilities. They are the pillar of Atlas DAO.",
   },
   {
     question: "What are some of the utilities of the Atlas Sky Monk NFT?",
@@ -33,14 +33,14 @@ export const faqList = [
       "NFT holders will receive 25% or more of the Atlas DAO token genesis supply, staking boost, share validating reward, the possibility for NFT holders to sell their NFT back to our platform for the mint price at any time and much more.",
   },
   {
-    question: "What is the End World Hunger Foundation?",
+    question: "What is the End World Hunger non-profit organization?",
     answer:
-      "The goal of this foundation is to provide food to impoverished communities around the world. 10% of the capital raised in the Sky Monks NFT mint will go to either start it. We will also provide 10% of the atlas validating reward to the end world hunger foundation.",
+      "It will be a Non-Profit Organization or similar to it. The goal will be to provide food and water to impoverished communities around the world.",
   },
   {
     question: "Why should I stake with Atlas DAO Validator when it launches?",
     answer:
-      "Possible Atlas DAO token and NFT airdrop. You will be Helping Atlas DAO realize the goal of providing affordable housing to regular folks, providing food, and water to impoverished communities, and more.",
+      "Possible Atlas DAO token and NFT airdrop. You will be Helping Atlas DAO realize the goal of providing affordable housing, food, water, and more to impoverished communities.",
   },
   {
     question: "What is Sky Monks NFT?",
@@ -52,7 +52,7 @@ export const faqList = [
     answer: "Q2 2022, We will have a specific date close to launch.",
   },
   {
-    question: "What is the supply? ",
+    question: "What is the total supply of Sky Monk NFT?",
     answer: "4000; Released in 5 waves of 800 each.",
   },
   {
