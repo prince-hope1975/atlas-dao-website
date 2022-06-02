@@ -21,7 +21,7 @@ const App = () => {
           <Route path="/roadmap" element={<Roadmap />} />
           <Route path="/gallery" element={<Gallery />} />
 
-          <Route path="*" element={<div>hola</div>} />
+          <Route path="*" element={<div>Page not found</div>} />
         </Route>
       </Routes>
     </HashRouter>
