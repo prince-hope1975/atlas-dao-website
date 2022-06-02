@@ -10,7 +10,7 @@ const SimpleImageComponent = ({ data }) => {
       xs={12}
       sm={12}
       md={6}
-      lg={data.lg - 1}
+      lg={data.lg}
       sx={{ display: "flex", justifyContent: "center" }}
     >
       <Box
