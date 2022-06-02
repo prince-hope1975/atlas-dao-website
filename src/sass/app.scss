@@ -183,6 +183,30 @@ body {
       margin: 2vh auto 2vh;
     }
   }
+
+  .star-wars {
+    top: -400px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 500px;
+    color: #eaed23;
+    font-size: 500%;
+    font-weight: 600;
+    letter-spacing: 6px;
+    line-height: 150%;
+    perspective: 400px;
+    text-align: justify;
+  
+    overflow: hidden;
+  
+    text-shadow: 1px 1px 1px #777, 1px 2px 1px #777, 1px 3px 1px #777,
+        1px 4px 1px #777, 1px 5px 1px #777, 1px 6px 1px #777,
+        1px 7px 1px #777, 1px 8px 1px #777, 1px 9px 1px #777,
+        1px 10px 1px #777, 1px 18px 6px rgba(16, 16, 16, 0.4),
+        1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+        1px 30px 60px rgba(16, 16, 16, 0.4);
+  }
 }
 
 @media all and (max-width: 900px) {
@@ -292,6 +316,29 @@ body {
       margin: 2vh auto 2vh;
     }
   }
+
+  .star-wars {
+    top: -400px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 500px;
+    color: #eaed23;
+    font-size: 500%;
+    font-weight: 600;
+    letter-spacing: 1px;
+    perspective: 400px;
+    text-align: justify;
+  
+    overflow: hidden;
+  
+    text-shadow: 1px 1px 1px #777, 1px 2px 1px #777, 1px 3px 1px #777,
+        1px 4px 1px #777, 1px 5px 1px #777, 1px 6px 1px #777,
+        1px 7px 1px #777, 1px 8px 1px #777, 1px 9px 1px #777,
+        1px 10px 1px #777, 1px 18px 6px rgba(16, 16, 16, 0.4),
+        1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+        1px 30px 60px rgba(16, 16, 16, 0.4);
+  }
 }
 
 .validator {
@@ -330,30 +377,6 @@ body {
   top: -25px;
   background-image: linear-gradient(0deg, transparent, black 75%);
   z-index: 1;
-}
-
-.star-wars {
-  top: -400px;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  height: 500px;
-  color: #eaed23;
-  font-size: 500%;
-  font-weight: 600;
-  letter-spacing: 6px;
-  line-height: 150%;
-  perspective: 400px;
-  text-align: justify;
-
-  overflow: hidden;
-
-  text-shadow: 1px 1px 1px #777, 1px 2px 1px #777, 1px 3px 1px #777,
-      1px 4px 1px #777, 1px 5px 1px #777, 1px 6px 1px #777,
-      1px 7px 1px #777, 1px 8px 1px #777, 1px 9px 1px #777,
-      1px 10px 1px #777, 1px 18px 6px rgba(16, 16, 16, 0.4),
-      1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
-      1px 30px 60px rgba(16, 16, 16, 0.4);
 }
 
 .crawl {
