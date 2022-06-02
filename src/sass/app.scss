@@ -125,6 +125,26 @@ body {
       1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
       1px 30px 60px rgba(16, 16, 16, 0.4);
   }
+
+.validator-chars {
+  margin: 5vh 10vw;
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.validator-card {
+  width: 30vw;
+  margin: 0 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .validator-logo {
+    width: 10vw;
+    margin: auto;
+  }
+}
+
 }
 
 @media all and (max-width: 900px) {
@@ -175,6 +195,28 @@ body {
       1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
       1px 30px 60px rgba(16, 16, 16, 0.4);
   }
+
+  .validator-chars {
+    margin: 5vh 2vw;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .validator-card {
+    width: 80vw;
+    margin: 0 3vw 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .validator-logo {
+      width: 30vw;
+      margin: auto;
+    }
+  }  
+
 }
 
 .validator {
@@ -187,26 +229,6 @@ body {
 
   .validator-title {
     width: 100vw;
-    margin: auto;
-  }
-}
-
-.validator-chars {
-  margin: 5vh 10vw;
-  width: 80vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.validator-card {
-  width: 30vw;
-  margin: 0 3vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  .validator-logo {
-    width: 10vw;
     margin: auto;
   }
 }
