@@ -9,11 +9,6 @@ import ParalaxSectionTitle from "../../components/SectionTitle/ParalaxSectionTit
 
 const data = [
   {
-    title: "We give back",
-    logo: shield,
-    content: "We will use our validator rewards to help further our mission of empowering the impoverished."
-  },
-  {
     title: "Community",
     logo: globe,
     content: "We are a community-run validator node."
@@ -22,6 +17,11 @@ const data = [
     title: "IBC is the future",
     logo: world,
     content: "We believe in the cosmos ecosystem and want to contribute."
+  },
+  {
+    title: "We give back",
+    logo: shield,
+    content: "We will use our validator rewards to help further our mission of empowering the impoverished."
   }
 ]
 const chains = [

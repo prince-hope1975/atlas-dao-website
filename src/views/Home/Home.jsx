@@ -25,8 +25,6 @@ const Home = () => {
 
     const o = animateText(sdegree);
 
-    console.warn(delta);
-
     const crawlText = document.getElementsByClassName("crawl");
     crawlText[0].style.top = o.top + "px";
     crawlText[0].style.transform =
