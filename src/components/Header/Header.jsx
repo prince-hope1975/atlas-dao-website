@@ -9,9 +9,10 @@ import {
   useScrollTrigger,
   useTheme,
 } from "@mui/material";
-import { BlurCircular } from "@mui/icons-material";
+import { BlurCircular, Widgets } from "@mui/icons-material";
 import MenuEntry from "./MenuEntry";
 import SideMenu from "./SideMenu";
+import logo from "../../images/logo.png";
 
 const Header = ({ window }) => {
   const trigger = useScrollTrigger({
@@ -42,7 +43,7 @@ const Header = ({ window }) => {
         <CssBaseline />
         <Toolbar>
           <div style={{ flexGrow: 1 }}>
-            <BlurCircular />
+            <img src={logo} style={{width:"5vw"}}/>
           </div>
           {isMobile ? (
             <SideMenu entries={menuEntries} />
