@@ -139,7 +139,7 @@ const SkyMonks = () => {
       </Grid>
 
       <Grid item xs={12} sm={12} md={12} lg={12}>
-        <div style={{ height: "300px" }}></div>
+        <div style={{ height: "150px" }}></div>
       </Grid>
     </Grid>
   );
