@@ -62,7 +62,7 @@ const Validator = () => {
   return (
     <div className="validator">
       <div className="validator-title">
-        <ParalaxSectionTitle title={"Our Validators"}/>
+        <ParalaxSectionTitle title={"Our Values"}/>
       </div>
       <div className="validator-chars">
         {data.map((file,item) => (
