@@ -11,6 +11,7 @@ const Home = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   let sdegree = 0;
+  const speed = 0.1;
 
   document.addEventListener("mousewheel", (event) => {
     mouseWheelHandler(event);
@@ -20,7 +21,7 @@ const Home = () => {
     const e = window.event || event;
     const delta = Math.max(-1, Math.min(1, e.wheelDelta || -e.detail));
 
-    sdegree -= 0.5 * delta;
+    sdegree -= speed * delta;
 
     const o = animateText(sdegree);
 
@@ -61,25 +62,47 @@ const Home = () => {
 
   return (
     <div className="container">
-      <ParalaxSectionTitle title="Atlas dao" color="#eaed23" boxShadow="#777"/>
-      <div className="fade" />
+      <ParalaxSectionTitle title="Atlas dao" color="#eaed23" boxShadow="#777" />
+      <div className="fade" style={{ top: isMobile ? "-75px" : "-25px" }} />
       <section className="star-wars">
-        <div className="crawl">
+        <div className="crawl" style={{ fontSize: isMobile ? "30%" : "100%" }}>
           <div className="title">
             <h1></h1>
           </div>
 
-          <p>We are a community focused DAO. Ultimately we hope that leads to helping impoverished communities. For now, we are focused on growing within the Cosmos Ecosystem. We plan to use both NFTs and validator nodes to support our community and DAO.</p>
-          <br/>
-          <p>To this end, we have already launched and minted out Sky Monks NFT on Stargaze. We have also launched an Atlas DAO validator node on the Stargaze chain. </p>
-          <br/>
-          <p>We hope to build upon this model, launching future NFT series in different marketplaces, and spinning up nodes on the corresponding chains. </p>
-          <br/>
-          <p>In this way, we will build our own community while strengthening our commitment to the greater Cosmos community. </p>
-          <br/>
-          <p>It is our goal to empower and incentivize the members of our community, which will inspire them to give back. As a community and team, we can achieve some of our long terms goals - providing food, water, or even affordable housing to impoverished communities. It will take the strength of the community to make that happen. Come be strong with us! </p>
-          <br/>
-
+          <p>
+            We are a community focused DAO. Ultimately we hope that leads to
+            helping impoverished communities. For now, we are focused on growing
+            within the Cosmos Ecosystem. We plan to use both NFTs and validator
+            nodes to support our community and DAO.
+          </p>
+          <br />
+          <p>
+            To this end, we have already launched and minted out Sky Monks NFT
+            on Stargaze. We have also launched an Atlas DAO validator node on
+            the Stargaze chain.{" "}
+          </p>
+          <br />
+          <p>
+            We hope to build upon this model, launching future NFT series in
+            different marketplaces, and spinning up nodes on the corresponding
+            chains.{" "}
+          </p>
+          <br />
+          <p>
+            In this way, we will build our own community while strengthening our
+            commitment to the greater Cosmos community.{" "}
+          </p>
+          <br />
+          <p>
+            It is our goal to empower and incentivize the members of our
+            community, which will inspire them to give back. As a community and
+            team, we can achieve some of our long terms goals - providing food,
+            water, or even affordable housing to impoverished communities. It
+            will take the strength of the community to make that happen. Come be
+            strong with us!{" "}
+          </p>
+          <br />
         </div>
       </section>
     </div>
