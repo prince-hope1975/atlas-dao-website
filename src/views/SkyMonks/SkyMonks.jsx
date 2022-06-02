@@ -8,10 +8,10 @@ import { dataCards, perks } from "./data.js";
 import atlasGif from "../../images/skyMonks.gif";
 
 import founder from "../../images/team/founder.png";
-import foundingMember from "../../images/team/founding_member.png";
 import artist from "../../images/team/artist.png";
-import foundingMember2 from "../../images/team/founding_member_2.png";
-import creativeDirector from "../../images/team/creative_director.png";
+import marketingDirector from "../../images/team/marketingDirector.png";
+import web3dev from "../../images/team/web3dev.png";
+import nonprofitDirector from "../../images/team/nonprofitDirector.png";
 import SimpleImageComponent from "../Gallery/SimpleImageComponent/SimpleImageComponent.jsx";
 
 const team = [
@@ -22,25 +22,25 @@ const team = [
     lg: 4,
   },
   {
-    image: foundingMember,
+    image: artist,
     description: "Founding Member",
-    url: "https://twitter.com/erikchain_io",
+    url: "https://twitter.com/Cosmonaut_nicl",
     lg: 4,
   },
   {
-    image: artist,
+    image: marketingDirector,
     description: "Artist",
     url: "https://twitter.com/rendrasc",
     lg: 4,
   },
   {
-    image: foundingMember2,
+    image: web3dev,
     description: "Founding Member",
-    url: "https://twitter.com/sir_arndt",
+    url: "https://twitter.com/wild_developer_",
     lg: 6,
   },
   {
-    image: creativeDirector,
+    image: nonprofitDirector,
     description: "Creative director",
     url: "https://twitter.com/chellyysavv",
     lg: 6,
