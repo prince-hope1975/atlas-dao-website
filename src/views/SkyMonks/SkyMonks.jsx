@@ -11,7 +11,6 @@ import founder from "../../images/team/founder.png";
 import artist from "../../images/team/artist.png";
 import marketingDirector from "../../images/team/marketingDirector.png";
 import web3dev from "../../images/team/web3dev.png";
-import nonprofitDirector from "../../images/team/nonprofitDirector.png";
 import SimpleImageComponent from "../Gallery/SimpleImageComponent/SimpleImageComponent.jsx";
 
 const team = [
@@ -22,12 +21,6 @@ const team = [
     lg: 4,
   },
   {
-    image: nonprofitDirector,
-    description: "Non Profit Director",
-    url: "https://twitter.com/chellyysavv",
-    lg: 4,
-  },
-  {
     image: artist,
     description: "Artist",
     url: "https://twitter.com/rendrasc",
@@ -35,7 +28,7 @@ const team = [
   },
   {
     image: web3dev,
-    description: "Web 3 Dev",
+    description: "Web3 Dev",
     url: "https://twitter.com/wild_developer_",
     lg: 6,
   },
