@@ -11,7 +11,7 @@ const Home = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   let sdegree = 0;
-  const speed = 0.1;
+  const speed = 0.2;
 
   document.addEventListener("mousewheel", (event) => {
     mouseWheelHandler(event);
@@ -99,10 +99,12 @@ const Home = () => {
             community, which will inspire them to give back. As a community and
             team, we can achieve some of our long terms goals - providing food,
             water, or even affordable housing to impoverished communities. It
-            will take the strength of the community to make that happen. Come be
-            strong with us!{" "}
+            will take the strength of the community to make that happen.
           </p>
           <br />
+          <p>
+          {" "}Come be strong with us!{" "}
+          </p>
         </div>
       </section>
     </div>
