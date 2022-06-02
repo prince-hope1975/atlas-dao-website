@@ -8,13 +8,13 @@ export const dataCards = [
   {
     title: "Sky Monk Gives Back",
     content:
-      "10% of the NFT proceeds will go to start a Non-profit organisation that provides food and water to impoverished communities around the world.",
+      "We will contribute into providing food and water to impoverished communities.",
     image: atlas1,
   },
   {
     title: "We value Our Community",
     content:
-      "All the funds raised will be HELD in a multisig wallet with different well known trustworthy cosmonauts.",
+      "Funds raised will be held in a multisig wallet.",
     image: atlas2,
   },
   {
@@ -25,7 +25,7 @@ export const dataCards = [
   {
     title: "Sky Monk NFT Holder Help",
     content:
-      "Sky Monk holders will play an integral role in the project. They will Participate in governance and early access to products release.",
+      "Sky Monk holders  will Participate in governance and early access to products release.",
     image: atlas4,
   },
 ];
@@ -44,7 +44,7 @@ export const perks = [
     translateY: 80,
   },
   {
-    title: "Validator Nodes Airdrops",
+    title: "Validator Nodes Discount",
     icon: EmojiEvents,
     translateX: -250,
     translateY: 150,
