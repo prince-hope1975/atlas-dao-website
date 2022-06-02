@@ -69,15 +69,16 @@ const Home = () => {
             <h1></h1>
           </div>
 
-          <p>Community-focused DAO on empowering and creating products for regular folks. </p>
+          <p>We are a community focused DAO. Ultimately we hope that leads to helping impoverished communities. For now, we are focused on growing within the Cosmos Ecosystem. We plan to use both NFTs and validator nodes to support our community and DAO.</p>
           <br/>
-          <p>We seek to create a community of devs, builders, creators, and non-crypto natives to create Dapp and products which will benefit regular folks. </p>
+          <p>To this end, we have already launched and minted out Sky Monks NFT on Stargaze. We have also launched an Atlas DAO validator node on the Stargaze chain. </p>
           <br/>
-          <p>We hope to empower and incentivize people to do good. </p>
+          <p>We hope to build upon this model, launching future NFT series in different marketplaces, and spinning up nodes on the corresponding chains. </p>
           <br/>
-          <p>Some of our long-term goals are to provide affordable housing, Nonprofit organization, and more. </p>
+          <p>In this way, we will build our own community while strengthening our commitment to the greater Cosmos community. </p>
           <br/>
-          <p>Join us if you would like to collaborate with us on those initiatives. </p>
+          <p>It is our goal to empower and incentivize the members of our community, which will inspire them to give back. As a community and team, we can achieve some of our long terms goals - providing food, water, or even affordable housing to impoverished communities. It will take the strength of the community to make that happen. Come be strong with us! </p>
+          <br/>
 
         </div>
       </section>
