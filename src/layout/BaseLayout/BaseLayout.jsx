@@ -6,13 +6,15 @@ import { Grid, Toolbar } from "@mui/material";
 import Footer from "../../components/Footer/Footer";
 
 const BaseLayout = () => {
+  const location = localStorage.getItem("location") || null;
+
   return (
     <>
       <Header />
       <Toolbar />
       <div
         style={{
-          height: "100vh",
+          height: !location ? "100vh" : null,
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",

@@ -17,6 +17,11 @@ const MenuEntry = ({ entry }) => {
       <span
         onClick={() => {
           navigate(entry.url);
+          if (entry.label === "Home") {
+            localStorage.setItem("location", "home");
+          } else {
+            localStorage.clear();
+          }
         }}
         style={{ cursor: "pointer" }}
       >

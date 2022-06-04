@@ -4,7 +4,12 @@ import { Parallax } from "react-scroll-parallax";
 import { Grid, Typography, useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/system";
 
-const ParalaxSectionTitle = ({ title , color = "#f5f5f5", boxShadow = "#919191"}) => {
+const ParalaxSectionTitle = ({
+  title,
+  color = "#f5f5f5",
+  boxShadow = "#919191",
+  home = false,
+}) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
@@ -14,8 +19,10 @@ const ParalaxSectionTitle = ({ title , color = "#f5f5f5", boxShadow = "#919191"}
       sx={{
         display: "flex",
         justifyContent: "center",
-        marginTop: "80px",
-        marginBottom: "80px",
+        marginTop: home ? "0" : "80px",
+        marginBottom: home ? "0" : "80px",
+        backgroundColor: home ? "black" : "transparent",
+        height: isMobile ? "100px" : null,
       }}
       xs={12}
       sm={12}

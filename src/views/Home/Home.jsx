@@ -8,15 +8,14 @@ import roadmap4 from "../../images/roadmap/roadmap_4.svg";
 import ParalaxSectionTitle from "../../components/SectionTitle/ParalaxSectionTitle.jsx";
 import { KeyboardArrowDown, KeyboardArrowUp } from "@mui/icons-material";
 
-let sdegree = 10;
-
 const Home = () => {
-  // const [arrowUpDisabled, setArrowUpDisabled] = useState(true);
-  // const [arrowDownDisabled, setArrowDownDisabled] = useState(false);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   const mouseWheelHandlerSpeed = 0.2;
   const arrowClickHandlerSpeed = 1.5;
+  const lowerLimit = isMobile ? -3 : 2;
+  const upperLimit = isMobile ? 40 : 95;
+  let sdegree = isMobile ? -4 : -1;
 
   document.addEventListener("mousewheel", (event) => {
     mouseWheelHandler(event);
@@ -24,22 +23,18 @@ const Home = () => {
 
   const arrowClickHandler = (delta) => {
     sdegree -= arrowClickHandlerSpeed * delta;
-    // setArrowDownDisabled(false);
-    // setArrowUpDisabled(false);
-    if (sdegree < 10) {
-      sdegree = 10;
-      // setArrowUpDisabled(true);
+    if (sdegree < lowerLimit) {
+      sdegree = lowerLimit;
     }
-    if (sdegree > 110) {
-      sdegree = 110;
-      // setArrowDownDisabled(true);
+    if (sdegree > upperLimit) {
+      sdegree = upperLimit;
     }
 
     const o = animateText(sdegree);
 
-    const crawlText = document.getElementsByClassName("crawl");
-    crawlText[0].style.top = o.top + "px";
-    crawlText[0].style.transform =
+    const crawlText = document.getElementById("crawl");
+    crawlText.style.top = o.top + "px";
+    crawlText.style.transform =
       "rotateX(" + o.rotateX + "deg) translateZ(" + o.translateZ + "px)";
 
     return false;
@@ -51,22 +46,18 @@ const Home = () => {
 
     sdegree -= mouseWheelHandlerSpeed * delta;
     console.warn(sdegree);
-    // setArrowDownDisabled(false);
-    // setArrowUpDisabled(false);
-    if (sdegree < 10) {
-      sdegree = 10;
-      // setArrowUpDisabled(true);
+    if (sdegree < lowerLimit) {
+      sdegree = lowerLimit;
     }
-    if (sdegree > 110) {
-      sdegree = 110;
-      // setArrowDownDisabled(true);
+    if (sdegree > upperLimit) {
+      sdegree = upperLimit;
     }
 
     const o = animateText(sdegree);
 
-    const crawlText = document.getElementsByClassName("crawl");
-    crawlText[0].style.top = o.top + "px";
-    crawlText[0].style.transform =
+    const crawlText = document.getElementById("crawl");
+    crawlText.style.top = o.top + "px";
+    crawlText.style.transform =
       "rotateX(" + o.rotateX + "deg) translateZ(" + o.translateZ + "px)";
 
     return false;
@@ -76,8 +67,10 @@ const Home = () => {
     const limit = { min: 0, max: 100 };
 
     const top_l = { min: 0, max: -6000 };
-    const rotateX_l = { min: 20, max: 25 };
-    const translateZ_l = { min: 0, max: -2500 };
+    const rotateX_l = isMobile ? { min: 17, max: 17 } : { min: 25, max: 25 };
+    const translateZ_l = isMobile
+      ? { min: 168, max: -1500 }
+      : { min: -100, max: -2500 };
 
     const m_top = (top_l.max - top_l.min) / (limit.max - limit.min);
     const m_rotateX = (rotateX_l.max - rotateX_l.min) / (limit.max - limit.min);
@@ -104,17 +97,21 @@ const Home = () => {
           title="Atlas dao"
           color="#eaed23"
           boxShadow="#777"
+          home={true}
         />
-        <div className="fade" style={{ top: isMobile ? "-75px" : "-25px" }} />
         <section className="star-wars">
           <div
-            className="crawl"
-            style={{ fontSize: isMobile ? "30%" : "100%" }}
+            id="crawl"
+            style={{
+              fontSize: isMobile ? "25%" : "100%",
+              position: "relative",
+              width: isMobile ? "50%" : null,
+              top: isMobile ? "180px" : "-120px",
+              transform: isMobile
+                ? "rotateX(17deg) translateZ(218px)"
+                : "rotateX(25deg) translateZ(-148px)",
+            }}
           >
-            <div className="title">
-              <h1></h1>
-            </div>
-
             <p>
               We are a community focused DAO. Ultimately we hope that leads to
               helping impoverished communities. For now, we are focused on
