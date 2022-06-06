@@ -23,6 +23,7 @@ const ParalaxSectionTitle = ({
         marginBottom: home ? "0" : "80px",
         backgroundColor: home ? "black" : "transparent",
         height: isMobile ? "100px" : null,
+        boxShadow: home ? "0 30px 50px 50px rgba(0, 0, 0, 0.9)" : null,
       }}
       xs={12}
       sm={12}
