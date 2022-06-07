@@ -102,7 +102,7 @@ const Home = () => {
           <div
             id="crawl"
             style={{
-              fontSize: isMobile ? "25%" : "100%",
+              fontSize: isMobile ? "15%" : "100%",
               position: "relative",
               width: isMobile ? "50%" : null,
               top: isMobile ? "180px" : "-120px",
@@ -150,13 +150,13 @@ const Home = () => {
       </div>
       <Grid container justifyContent="center">
         <IconButton
-          onClick={() => arrowClickHandler(1)}
+          onClick={() => arrowClickHandler(0.5)}
           // disabled={arrowUpDisabled}
         >
           <KeyboardArrowUp sx={{ fontSize: "80px" }} />
         </IconButton>
         <IconButton
-          onClick={() => arrowClickHandler(-1)}
+          onClick={() => arrowClickHandler(-0.5)}
           // disabled={arrowDownDisabled}
         >
           <KeyboardArrowDown sx={{ fontSize: "80px" }} />
