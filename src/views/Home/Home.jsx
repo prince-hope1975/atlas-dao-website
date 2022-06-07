@@ -45,7 +45,6 @@ const Home = () => {
     const delta = Math.max(-1, Math.min(1, e.wheelDelta || -e.detail));
 
     sdegree -= mouseWheelHandlerSpeed * delta;
-    console.warn(sdegree);
     if (sdegree < lowerLimit) {
       sdegree = lowerLimit;
     }
