@@ -44,7 +44,7 @@ const Home = () => {
     const e = window.event || event;
     const delta = Math.max(-1, Math.min(1, e.wheelDelta || -e.detail));
 
-    sdegree -= mouseWheelHandlerSpeed * delta;
+    sdegree -= mouseWheelHandlerSpeed * delta * 2;
     if (sdegree < lowerLimit) {
       sdegree = lowerLimit;
     }
@@ -112,36 +112,29 @@ const Home = () => {
             }}
           >
             <p>
-              We are a community focused DAO. Ultimately we hope that leads to
-              helping impoverished communities. For now, we are focused on
-              growing within the Cosmos Ecosystem. We plan to use both NFTs and
-              validator nodes to support our community and DAO.
+              We are a community focused DAO. Our goal is to help people in need. 
+              For now, we focus in growing around the Cosmos ecosystem We plan 
+              to use both NFTs and validator nodes to give support to our community 
+              and DAO.
             </p>
             <br />
             <p>
-              To this end, we have already launched and minted out Sky Monks NFT
-              on Stargaze. We have also launched an Atlas DAO validator node on
+              To this end, we have launched and minted out "Sky Monks NFT"
+              on Stargaze. We have also set up an Atlas DAO validator on
               the Stargaze chain.{" "}
             </p>
             <br />
             <p>
-              We hope to build upon this model, launching future NFT series in
-              different marketplaces, and spinning up nodes on the corresponding
-              chains.{" "}
+              We hope to build upon this model, launching new NFT series and spinning 
+              up nodes in the corresponding chains.{" "}
             </p>
             <br />
             <p>
-              In this way, we will build our own community while strengthening
-              our commitment to the greater Cosmos community.{" "}
+            In this way, we will grow our community and strengthen our bond to the greater Cosmos community. {" "}
             </p>
             <br />
             <p>
-              It is our goal to empower and incentivize the members of our
-              community, which will inspire them to give back. As a community
-              and team, we can achieve some of our long terms goals - providing
-              food, water, or even affordable housing to impoverished
-              communities. It will take the strength of the community to make
-              that happen.
+            It is our goal to empower and motivate the members of our community, which will inspire them to give back. As a community and team, we can achieve some of our long terms goals - providing food, water, or even affordable housing to impoverished communities. It will take the strength of our community to make that happen. 
             </p>
             <br />
             <p> Come be strong with us! </p>
