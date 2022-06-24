@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component, useState, useEffect } from 'react';
 import algoliasearch from 'algoliasearch/lite';
 import PropTypes from 'prop-types';
 import {
   InstantSearch,
   Hits,
-  SearchBox,
   Pagination,
   ClearRefinements,
   RefinementList,
@@ -15,25 +14,70 @@ const searchClient = algoliasearch(
   '1ec2ab36e6b367aabed0d3c493ac4006' // Key API db
 );
 
+const properties = [
+  "Background",
+  "Backlight",
+  "Body",
+  "Shape",
+  "Outfit",
+  "Head",
+  "Hold",
+  "Hand"
+  ]
+
 const Gallery = () => {
+  const [property, setProperty] = useState(null);
+  
   return (
     <div className="gallery">
+      <h1>Gallery</h1>
     <InstantSearch searchClient={searchClient} indexName="atlasdao">
-        <h2>Search by parameters</h2>
-        <div className=''>
-          <div className='refinement-block'>
-            <h3>Country</h3>
-            <RefinementList attribute={"hand"}/>
-          </div>
-          <div className='refinement-block'>
-            <h3>Hold</h3>
-            <RefinementList attribute={"hold"}/>
-          </div>
+        <div className='gallery-container'>
+
+        <div className='refinements'>
+            {
+              properties.map((value) => {
+                return(
+                  <>
+                    <div className='refinement-block'>
+                      <h3 onClick={() => {
+                        console.log(property, value);
+                        if (property != value){
+                          setProperty(value);
+                          document.getElementById("Background").style.visibility = "hidden";
+                          document.getElementById("Backlight").style.visibility = "hidden";
+                          document.getElementById("Body").style.visibility = "hidden";
+                          document.getElementById("Shape").style.visibility = "hidden";
+                          document.getElementById("Outfit").style.visibility = "hidden";
+                          document.getElementById("Head").style.visibility = "hidden";
+                          document.getElementById("Hold").style.visibility = "hidden";
+                          document.getElementById("Hand").style.visibility = "hidden";
+                          document.getElementById(value).style.visibility = "visible";
+                        }
+                        else{
+                          setProperty(null);
+                          document.getElementById(value).style.visibility = "hidden";
+                        };
+                        }}>{value}</h3> 
+                      {
+                      <div id={value} style={{visibility:"hidden", "height":"0vh"}}>
+                        <RefinementList 
+                          id = {value}
+                          showMoreLimit={20}
+                          limit={25}
+                          attribute={value}
+                          />
+                      </div>
+                        }
+                    </div>
+                  </> 
+                )
+              })
+            }
+            <ClearRefinements/>
         </div>
-          
-        <SearchBox 
-        searchAsYouType={true}/>
           <Hits hitComponent={HitComponent}/>
+        </div>
           <Pagination/>
       </InstantSearch>
     </div>
