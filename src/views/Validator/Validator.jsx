@@ -28,7 +28,7 @@ const chains = [
   {
     title: "Stargaze",
     logo: stars,
-    apr: "54.01%",
+    apr: "62.74%",
     description: "The first interoperable L1 for NFTs.",
     link: "https://wallet.keplr.app/#/stargaze/stake?tab=inactive-validators&modal=stake&validator=starsvaloper1heysdk56e4t8vaq5msmek2hsnc6guv8mhklcqx"
   },
