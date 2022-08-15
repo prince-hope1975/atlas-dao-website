@@ -34,20 +34,6 @@ const Footer = () => {
         <Grid item>
           <Typography>Copyright © 2022 // Powered by Akash</Typography>
         </Grid>
-        <Grid item sx={{ display: "flex", alignItems: "center" }}>
-          {icons.map((item, index) => (
-            <div key={index} style={{ margin: "0 8px" }}>
-              <Link
-                color="inherit"
-                href={item.url}
-                target="_blank"
-                rel="noopener"
-              >
-                {item.icon}
-              </Link>
-            </div>
-          ))}
-        </Grid>
       </Grid>
     </Grid>
   );
