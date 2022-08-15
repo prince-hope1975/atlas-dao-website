@@ -5,12 +5,12 @@ import {
   CssBaseline,
   Toolbar,
   useMediaQuery,
-  useScrollTrigger,
   useTheme,
 } from "@mui/material";
 import MenuEntry from "./MenuEntry";
 import SideMenu from "./SideMenu";
 import logo from "../../images/logo.png";
+import Networks from "../Networks/Networks";
 
 const Header = ({ window }) => {
 
@@ -43,15 +43,20 @@ const Header = ({ window }) => {
         <div style={{ flexGrow: 1 }}>
           <img src={logo} style={{ width: "5vw" }} />
         </div>
-        {isMobile ? (
-          <SideMenu entries={menuEntries} />
-        ) : (
-          <>
-            {menuEntries.map((entry) => {
-              return <MenuEntry entry={entry} key={entry.label} />;
-            })}
-          </>
-        )}
+        <div style={{display: "flex", margin: "30px 10px"}}>
+          {isMobile ? (
+            <SideMenu entries={menuEntries} />
+          ) : ( 
+            <>
+              {menuEntries.map((entry) => {
+                return <MenuEntry entry={entry} key={entry.label} />;
+              })}
+            </>
+          )}
+          {isMobile ? <></> : (
+            <Networks/>
+          )}
+        </div>
       </Toolbar>
     </AppBar>
 
