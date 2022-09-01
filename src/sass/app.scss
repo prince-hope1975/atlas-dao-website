@@ -686,3 +686,71 @@ body {
     margin: 5vh 0;
   }
 }
+
+#welcomeImage{
+  width: 100vw;
+}
+
+.home {
+  margin: 5vh 10vw 0;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  font-size: 250%;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-align: justify;
+
+  p{
+    text-align: center;
+  }
+  text-shadow: 1px 1px 1px #777, 1px 2px 1px #777, 1px 3px 1px #777,
+    1px 4px 1px #777, 1px 5px 1px #777, 1px 6px 1px #777, 1px 7px 1px #777,
+    1px 8px 1px #777, 1px 9px 1px #777, 1px 10px 1px #777,
+    1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2),
+    1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
+
+  #shining-star{
+    position: absolute;
+    z-index: -1;
+    height: 5vh;
+    top: 25vh;
+    left: 0;
+    animation: fly-right-left 5s infinite;
+    animation-delay: 2s;
+  }
+
+  @keyframes fly-right-left{
+    0%{
+      transform:
+      translate(110vw,175vh);
+    }
+    100% {
+      transform: 
+      translate(-10vw,110vh);
+    }
+  }
+
+  #rocket{
+    position: absolute;
+    z-index: -1;
+    height: 25vh;
+    top: 25vh;
+    left: 0;
+    transform: translateX(100vw);
+    animation: fly-left-right 5s infinite;
+    animation-delay: 5s;
+  }
+  
+  @keyframes fly-left-right{
+    0%{
+      transform: translate(-221vw,450vh);
+    }
+    100% {
+      transform: translate(75vw,-60vh);
+    }
+  }
+  
+}
