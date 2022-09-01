@@ -3,13 +3,13 @@ export const stepTextContent = {
     "Build core team",
     "Establish social media presence",
     "Launch website",
-    "Launch Sky Monk NFT on Stargaze and Omniflix",
+    "Launch Sky Monks on Stargaze",
     "Partner with other Cosmos Chains and NFT Projects",
     "Spin Stargaze validator node",
     "Distribute NFT Mint Raffle",
   ],
   1: [
-    "Launch Sky Monk NFT on Cronos X Stashh",
+    "LAUNCH SKY MONK NFT NEXT COLLECTION",
     "Spin Juno Validator Node",
     "Hire more Developers",
     "Research and Development",
@@ -17,6 +17,7 @@ export const stepTextContent = {
   2: [
     "Spin Atom Validator Node",
     "Launch End World Hunger Foundation",
+    "Launch NFT DAO",
     "More Information coming soon . . .",
   ],
 };
@@ -30,15 +31,15 @@ export const faqList = [
   {
     question: "Why should I stake with Atlas DAO Validator when it launches?",
     answer:
-      "Possible Atlas DAO token and NFT airdrop. You will be Helping Atlas DAO realize the goal of providing affordable housing, food, water, and more to impoverished communities.",
+      "You will be helping Atlas DAO Nonprofit and the DAO development.",
   },
   {
-    question: "Where can get Sky Monks NFT",
-    answer: "You can go on Stargaze marketplace.",
+    question: "Where can I buy Sky Monks NFT",
+    answer: "Stargaze marketplace.",
   },
   {
     question: "What is the total supply of Sky Monk NFT?",
-    answer: "4000; Released in 5 waves of 800 each.",
+    answer: "800",
   },
   {
     question: "What is the End World Hunger non-profit organization?",
