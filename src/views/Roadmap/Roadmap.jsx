@@ -51,7 +51,6 @@ const Roadmap = () => {
 
   return (
     <Stack sx={{ width: "100%" }} spacing={4}>
-      <ParalaxSectionTitle title="Roadmap" />
       <Stepper
         alternativeLabel
         activeStep={activeStep}
