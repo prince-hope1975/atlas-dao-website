@@ -8,7 +8,7 @@ export const dataCards = [
   {
     title: "Sky Monk Gives Back",
     content:
-      "We will contribute into providing food and water to impoverished communities.",
+      "We will contribute into providing food and water to communities in need.",
     image: atlas1,
   },
   {
@@ -38,19 +38,19 @@ export const perks = [
     translateY: 300,
   },
   {
-    title: "Cosmoverse Ticket Raffles",
+    title: "Atlas DAO governance right",
     icon: LocalActivity,
     translateX: 250,
     translateY: 80,
   },
   {
-    title: "Validator Nodes Discount",
+    title: "Validator commission discount",
     icon: EmojiEvents,
     translateX: -250,
     translateY: 150,
   },
   {
-    title: "Atlas DAO Token Airdrop",
+    title: "Airdrops",
     icon: Paid,
     translateX: 250,
     translateY: -140,
