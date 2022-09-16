@@ -1,25 +1,38 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Outlet } from "react-router";
 import Header from "../../components/Header/Header";
 import { Grid, Toolbar } from "@mui/material";
+import { Stars } from "../../views/Home/Home";
 
 import Footer from "../../components/Footer/Footer";
 
 const BaseLayout = () => {
-  const location = localStorage.getItem("location") || null;
+const randomize = (int) => Math.floor(Math.random() * int);
 
+  const location = localStorage.getItem("location") || null;
+  const [array, setArray] = useState([]);
+
+  useEffect(() => {
+    const arr = [...Array(150)].map(() => {
+      const size = randomize(5);
+      const posX = randomize(100);
+      const posY = randomize(100);
+      const propX = [randomize(4)];
+      const propY = [randomize(4)];
+
+      return { size, posX, posY, propX, propY };
+    });
+    setArray(arr);
+  }, []);
   return (
     <>
       <Header />
-      <Toolbar />
       <div
         style={{
-          height: !location ? "100vh" : null,
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-between",
+          // position: "relative",
         }}
       >
+        <Stars array={array} />
         <Grid
           container
           sx={{

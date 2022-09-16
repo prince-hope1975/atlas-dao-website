@@ -27,14 +27,21 @@ const SideMenu = ({ entries }) => {
         anchor={"right"}
         open={open}
         onClose={toggleDrawer(false)}
-        sx={{
-          ".css-1vxvp5a-MuiPaper-root-MuiDrawer-paper": {
-            backgroundColor: "transparent",
-            backgroundImage: "none",
-          },
-        }}
+        sx={
+          {
+            ".css-1vxvp5a-MuiPaper-root-MuiDrawer-paper": {
+              backgroundColor: "transparent",
+              backgroundImage: "none",
+            },
+            
+          }
+        }
       >
-        <List>
+        <List
+          sx={{
+            width: "90vw",
+          }}
+        >
           <ListItem sx={{ justifyContent: "flex-end" }}>
             <IconButton onClick={toggleDrawer(false)}>
               <CloseRounded />

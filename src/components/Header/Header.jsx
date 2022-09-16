@@ -11,9 +11,13 @@ import MenuEntry from "./MenuEntry";
 import SideMenu from "./SideMenu";
 import logo from "../../images/logo.png";
 import Networks from "../Networks/Networks";
+import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
+
+import TemporaryDrawer from "./Drawer.tsx";
 
 const Header = ({ window }) => {
-
+  const navigate = useNavigate();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
@@ -27,39 +31,58 @@ const Header = ({ window }) => {
   ];
 
   return (
-
-    <AppBar
+    <motion.div
+      layout
       // enableColorOnDark
-      sx={{
-        backgroundColor: "transparent",
-        backgroundImage: "none",
+      style={{
+        backgroundColor: "hsla(227, 82%, 11%, .4)",
+        backdropFilter: "blur(20px)",
+        zIndex: 10,
+        border: "none",
+        boxShadow: "none",
+        position: "fixed",
+        top: "0",
+        width: "100vw",
+        fontSize: "clamp(.5rem, 3vw, 1rem)",
       }}
-
-      position="fixed"
-
     >
       <CssBaseline />
       <Toolbar>
-        <div style={{ flexGrow: 1 }}>
-          <img src={logo} style={{ width: "5vw" }} />
+        <div
+          style={{
+            display: "flex",
+            flexGrow: 1,
+            flexBasis: 1,
+          }}
+          onClick={() => {
+            navigate("/");
+          }}
+        >
+          <img src={logo} style={{ width: "max(5vw , 2.5rem)", cursor:"pointer" }} />
         </div>
-        <div style={{display: "flex", margin: "30px 10px"}}>
+        <div
+          style={{
+            display: "flex",
+            margin: "30px 10px",
+            flexBasis: 1,
+            gap: "2rem",
+            marginRight: !isMobile?"5rem":"",
+            fontSize: "clamp(.5rem, 3vw, 1rem)",
+          }}
+        >
           {isMobile ? (
             <SideMenu entries={menuEntries} />
-          ) : ( 
+          ) : (
             <>
               {menuEntries.map((entry) => {
                 return <MenuEntry entry={entry} key={entry.label} />;
               })}
             </>
           )}
-          {isMobile ? <></> : (
-            <Networks/>
-          )}
+          {isMobile ? <></> : <Networks />}
         </div>
       </Toolbar>
-    </AppBar>
-
+    </motion.div>
   );
 };
 

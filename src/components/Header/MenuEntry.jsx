@@ -7,11 +7,9 @@ const MenuEntry = ({ entry }) => {
   const navigate = useNavigate();
 
   return (
-    <Typography
-      variant="h6"
-      component="div"
-      sx={{
-        padding: (theme) => `0 ${theme.spacing(2)}`,
+    <div
+      style={{
+        display: "flex",
       }}
     >
       <span
@@ -23,11 +21,15 @@ const MenuEntry = ({ entry }) => {
             localStorage.clear();
           }
         }}
-        style={{ cursor: "pointer" }}
+        style={{
+          cursor: "pointer",
+          width: "max-content",
+          fontSize: ".9rem",
+        }}
       >
-        {entry.label}
+        {entry.label} 
       </span>
-    </Typography>
+    </div>
   );
 };
 
