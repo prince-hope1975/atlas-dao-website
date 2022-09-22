@@ -2,31 +2,22 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Parallax } from "react-scroll-parallax";
 import { useMediaQuery, useTheme } from "@mui/material";
+import { MotionConfig } from "framer-motion";
+import { motion } from "framer-motion";
 
-const Perk = ({ title, Icon, translateX, translateY }) => {
+const Perk = (props) => {
+  const { title, Icon, translateX, translateY } = props;
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <Parallax
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-      }}
-      translateX={["0px", `${translateX}px`]}
-      translateY={["0px", `${translateY}px`]}
-      scale={[0, 1]}
-      easing={[0.46, 1.14, 0.26, 1.01]}
-    >
-      {isMobile ? (
-        <h2 style={{ textAlign: "center", width: "200px" }}>{title}</h2>
-      ) : (
-        <h1 style={{ textAlign: "center" }}>{title}</h1>
-      )}
+    <motion.div {...props} className={props.className} style={{width:"100%"}}>
+   
+        <h2 style={{ textAlign: "center" , fontSize:"clamp(.8rem, 3vw, 3rem)", fontWeight:"100", color:"hsl(0, 0%, 100%, .8)"}}>{title}</h2>
+      
       <Icon
         sx={{
-          fontSize: isMobile ? "150px" : "250px",
+          fontSize: "clamp(4rem, 10vw, 10rem)",
           color: "rgb(29, 21, 21)",
           backgroundColor: "#2f4353",
           backgroundImage: "linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%)",
@@ -35,7 +26,7 @@ const Perk = ({ title, Icon, translateX, translateY }) => {
           margin: "5px",
         }}
       />
-    </Parallax>
+    </motion.div>
   );
 };
 

@@ -5,6 +5,7 @@ import shield from "../../images/shield.svg";
 import world from "../../images/world.svg";
 import stars from "../../images/stars.png";
 import akash from "../../images/akash.png";
+import Container from "../../layout/BaseLayout/container";
 import ParalaxSectionTitle from "../../components/SectionTitle/ParalaxSectionTitle";
 
 const data = [
@@ -60,7 +61,7 @@ const Validator = () => {
   }
 
   return (
-    <div className="validator">
+    <Container className="validator">
       <div className="validator-title">
         <ParalaxSectionTitle title={"Our Values"} />
       </div>
@@ -91,7 +92,7 @@ const Validator = () => {
         )
         }
       </div>
-    </div>
+    </Container>
   );
 };
 

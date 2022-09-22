@@ -24,7 +24,7 @@ const Header = ({ window }) => {
   const menuEntries = [
     { label: "Home", url: "/" },
     // { label: "Roadmap", url: "/roadmap" },
-    { label: "Sky Monks", url: "/sky-monks" },
+    { label: "Collections", url: "/collections" },
     { label: "Validator", url: "/validator" },
     { label: "Gallery", url: "/gallery" },
     // { label: "Validators", url: "/validators" },

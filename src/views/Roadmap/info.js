@@ -22,16 +22,16 @@ export const stepTextContent = {
   ],
 };
 
-export const faqList = [ 
+export const faqList = [
   {
     question: "What is Sky Monks NFT?",
-    answer:
-      "Sky Monks is a PFP NFT with a wide range of utilities. ​​They are the pillar of Atlas DAO.",
+    answer: `Sky Monks Second Generation. Cosmos first generative music NFT collection. The Cosmic Sky Monks are a band of warriors bound together by a common goal. They are packed with Loop tokens and amazing art.
+The collection in the home page is Sky Monks not Cosmic Monks
+      `,
   },
   {
     question: "Why should I stake with Atlas DAO Validator when it launches?",
-    answer:
-      "You will be helping Atlas DAO Nonprofit and the DAO development.",
+    answer: "You will be helping Atlas DAO Nonprofit and the DAO development.",
   },
   {
     question: "Where can I buy Sky Monks NFT",
@@ -45,4 +45,5 @@ export const faqList = [
     question: "What is the End World Hunger non-profit organization?",
     answer:
       "It will be a Non-Profit Organization or similar to it. The goal will be to provide food and water to impoverished communities around the world.",
-  } ];
+  },
+];
